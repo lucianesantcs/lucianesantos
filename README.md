@@ -1,27 +1,22 @@
-# ProfessionalSite
+# Site Pessoal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+Criado com componentes e suas variantes; tipografia baseada no Material Design; ilustrações do site storyset; ícones do lucide Icons; usado tints.dev para criação da paleta de cores (também plugin Foundation no figma); Local variables e Tokens; auto layout. O link do figma está disponível para quem quiser dar uma olhada + resources usado durante o design.
 
-## Development server
+### Design:
+- [Link do figma](https://www.figma.com/file/sK8Rcd2lf0WDyLe2HDHQ4m/pessoal-%2F-site?type=design&node-id=0-1&mode=design)
+- [Playlist UI Design](https://www.youtube.com/playlist?list=PLNsOFKwcEPxzvqDJcWEGswBEM_zD5RaXr)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Outros resources:
+- [Ícones](https://lucide.dev/icons/archive) 
+- [Ilustrações](https://storyset.com/bro)
+- [Resources do eFront](https://iuricode.com/efront/)
+- [Tipogradia MD](https://m2.material.io/design/typography/the-type-system.html#type-scale)
+- [Paleta de cores](https://www.tints.dev)
 
-## Code scaffolding
+Plugins Figma:
+- [Foundation Color Generator](https://www.figma.com/community/plugin/1024452006068794933/foundation-color-generator)
+- [Contrast](https://www.figma.com/community/plugin/748533339900865323/contrast)
+- [Golden Line Height](https://www.figma.com/community/plugin/1203442582691456980/golden-line-height)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Desenvolvimento (Em progresso...):
+- Angular v17
