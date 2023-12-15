@@ -1,5 +1,7 @@
 # Site Pessoal
 
+![image](https://github.com/lucianesantcs/professional-site/assets/52360898/f1bbd308-c010-4105-90ba-206b17990b48)
+
 Criado com componentes e suas variantes; tipografia baseada no Material Design; ilustrações do site storyset; ícones do lucide Icons; usado tints.dev para criação da paleta de cores (também plugin Foundation no figma); Local variables e Tokens; auto layout. O link do figma está disponível para quem quiser dar uma olhada + resources usado durante o design.
 
 ### Design:
