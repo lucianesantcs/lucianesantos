@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "professional-site": {
+    "site-pessoal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/professional-site",
+            "outputPath": "dist/site-pessoal",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "professional-site:build:production"
+              "buildTarget": "site-pessoal:build:production"
             },
             "development": {
-              "buildTarget": "professional-site:build:development"
+              "buildTarget": "site-pessoal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "professional-site:build"
+            "buildTarget": "site-pessoal:build"
           }
         },
         "test": {
