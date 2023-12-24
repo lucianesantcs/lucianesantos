@@ -18,7 +18,7 @@ import {
   X,
 } from 'lucide-angular';
 
-const LucideIcons = {
+export const importedLucideIcons = {
   MoveRight,
   ChevronDown,
   ChevronUp,
@@ -36,6 +36,6 @@ const LucideIcons = {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    importProvidersFrom(LucideAngularModule.pick(LucideIcons)),
+    importProvidersFrom(LucideAngularModule.pick(importedLucideIcons)),
   ],
 };
