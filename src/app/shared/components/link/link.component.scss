@@ -1,0 +1,13 @@
+@use "../../../../assets/styles/components/link/link" as *;
+
+.link {
+  @include link-default-18;
+
+  &-active {
+    @include active;
+  }
+
+  &.default-12 {
+    @include link-default-12;
+  }
+}
