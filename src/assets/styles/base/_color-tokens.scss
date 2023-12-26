@@ -1,0 +1,5 @@
+@use "./color-variables" as *;
+
+$navigation-primary: $color-neutral-950;
+$navigation-primary-hover: $color-primary-500;
+$navigation-primary-active: $color-neutral-400;
