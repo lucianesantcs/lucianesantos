@@ -1,0 +1,13 @@
+<a
+  class="link"
+  [routerLink]="routerLink"
+  routerLinkActive="link-active"
+  ariaCurrentWhenActive="page"
+>
+  {{ routerLinkLabel }} 
+
+  @if (showIcon) {
+    <app-icon [name]="iconProps.iconName" />
+  }
+</a>
+
