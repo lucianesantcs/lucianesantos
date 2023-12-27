@@ -1,5 +1,5 @@
-@use "../../base/typography" as *;
-@use "../../base/color-tokens" as *;
+@use "../base/typography" as *;
+@use "../base/color-tokens" as *;
 
 a {
   text-decoration: none;
@@ -9,10 +9,6 @@ a {
 
 a:hover {
   color: $navigation-primary-hover;
-}
-
-a:active {
-  color: $navigation-primary-active;
 }
 
 .flex {

@@ -1,0 +1,51 @@
+@use "../base/typography" as *;
+@use "../base/color-tokens" as *;
+@use "../base/variables" as *;
+
+button {
+  font: inherit;
+  cursor: pointer;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  line-height: normal;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: ease-in-out 0.3s;
+}
+
+button:hover {
+  background-color: $surface-primary-inverted;
+  color: $content-primary-inverted;
+}
+
+button:disabled {
+  background-color: $surface-disabled;
+  color: $content-disabled;
+  cursor: not-allowed;
+}
+
+.button-default {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  background-color: $surface-primary;
+  border-radius: $border-radius-4;
+}
+
+@mixin button-default-32 {
+  @include button;
+  @extend .button-default;
+
+  gap: 0.8rem;
+}
+
+@mixin button-default-26 {
+  @include overline-bold;
+  @extend .button-default;
+
+  gap: 0.4rem;
+}
