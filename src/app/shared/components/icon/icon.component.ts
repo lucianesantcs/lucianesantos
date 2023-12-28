@@ -11,7 +11,7 @@ import { IconType } from './icon.type';
   styleUrl: './icon.component.scss',
 })
 export class IconComponent {
-  @Input() name?: IconType = 'MoveRight';
+  @Input({ required: true }) name!: IconType;
   @Input() size?: number;
   @Input() color!: string;
 
