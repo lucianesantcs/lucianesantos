@@ -1,0 +1,13 @@
+<button class="button">
+  @if (showLabel) {
+    {{ label }}
+  }
+
+  @if (showIcon) {
+    <app-icon [size]="iconProps?.iconSize" [name]="iconProps?.iconName" />
+  }
+
+  @if (overlineLabel) {
+    <span class="overline-label">{{ overlineLabel }}</span>
+  }
+</button>

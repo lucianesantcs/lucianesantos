@@ -1,0 +1,10 @@
+@use "../../../../assets/styles/components/button" as *;
+@use "../../../../assets/styles/base/typography" as *;
+
+.button {
+  @include button-default-32;
+
+  .overline-label {
+    @include overline-bold;
+  }
+}
