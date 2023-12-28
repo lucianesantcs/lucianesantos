@@ -12,7 +12,7 @@ import { IconType } from './icon.type';
 })
 export class IconComponent {
   @Input() name?: IconType = 'MoveRight';
-  @Input() size!: number;
+  @Input() size?: number;
   @Input() color!: string;
 
   public strokeWidth = 1.5;
