@@ -12,8 +12,8 @@ import { ILink } from './link.interface';
   providers: [],
 })
 export class LinkComponent {
-  @Input({ required: true }) routerLink!: string;
-  @Input({ required: true }) routerLinkLabel!: string;
-  @Input() showIcon?: boolean = false;
-  @Input() iconProps?: ILink['iconProps'] = { iconName: 'MoveRight' };
+  @Input({ required: true }) routerLink!: ILink['routerLink'];
+  @Input({ required: true }) routerLinkLabel!: ILink['routerLinkLabel'];
+  @Input() showIcon?: ILink['showIcon'] = false;
+  @Input() iconProps!: ILink['iconProps'];
 }

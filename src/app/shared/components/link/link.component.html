@@ -6,8 +6,8 @@
 >
   {{ routerLinkLabel }} 
 
-  @if (showIcon) {
-    <app-icon [name]="iconProps?.iconName" />
+  @if (showIcon && iconProps && iconProps.iconName) {
+    <app-icon [name]="iconProps.iconName" />
   }
 </a>
 
