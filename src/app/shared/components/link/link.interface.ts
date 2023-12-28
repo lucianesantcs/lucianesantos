@@ -1,12 +1,8 @@
-import { IconType } from '../icon/icon.type';
-
-export interface ILinkIconProps {
-  iconName: IconType;
-}
+import { IIcon } from '../icon/icon.interface';
 
 export interface ILink {
   routerLink: string;
   routerLinkLabel: string;
   showIcon?: boolean;
-  iconProps?: ILinkIconProps;
+  iconProps?: IIcon;
 }

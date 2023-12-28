@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IconComponent } from '../icon/icon.component';
-import { IButtonIconProps } from './button.interface';
+import { IButton } from './button.interface';
 
 @Component({
   selector: 'app-button',
@@ -13,9 +13,6 @@ export class ButtonComponent {
   @Input() showIcon?: boolean = false;
   @Input() showLabel?: boolean = true;
   @Input() label: string = 'Label';
-  @Input() overlineLabel!: string;
-  @Input() iconProps?: IButtonIconProps = {
-    iconName: 'MoveRight',
-    iconSize: 16,
-  };
+  @Input() overlineLabel?: string = 'Overline Label';
+  @Input() iconProps?: IButton['iconProps'] = { iconName: 'MoveRight' };
 }

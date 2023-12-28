@@ -1,13 +1,15 @@
-<button class="button">
-  @if (showLabel) {
-    {{ label }}
-  }
+@if (showLabel && label || showIcon && overlineLabel) {
+  <button class="button">
+    @if (showLabel && label) {
+      {{ label }}
+    }
 
-  @if (showIcon) {
-    <app-icon [size]="iconProps?.iconSize" [name]="iconProps?.iconName" />
-  }
+    @if (showIcon) {
+      <app-icon [size]="iconProps?.iconSize" [name]="iconProps?.iconName" />
+    }
 
-  @if (overlineLabel) {
-    <span class="overline-label">{{ overlineLabel }}</span>
-  }
-</button>
+    @if (showIcon && overlineLabel) {
+      <span class="overline-label">{{ overlineLabel }}</span>
+    }
+  </button>
+}
