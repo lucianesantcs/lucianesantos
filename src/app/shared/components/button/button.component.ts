@@ -10,9 +10,6 @@ import { IButton } from './button.interface';
   styleUrl: './button.component.scss',
 })
 export class ButtonComponent {
-  @Input() showIcon?: boolean = false;
-  @Input() showLabel?: boolean = true;
-  @Input() label: string = 'Label';
-  @Input() overlineLabel?: string = 'Overline Label';
-  @Input() iconProps?: IButton['iconProps'] = { iconName: 'MoveRight' };
+  @Input({ required: true }) buttonProps!: IButton;
+  @Input() iconProps?: IButton['iconProps'];
 }
