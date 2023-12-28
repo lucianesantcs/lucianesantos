@@ -1,0 +1,21 @@
+@use "../../../../assets/styles/base/index.scss" as *;
+
+.header {
+  box-shadow: $box-shadow-bottom;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 144rem;
+    padding: 2.4rem 8rem;
+    margin: 0 auto;
+    gap: 1.2rem;
+  }
+
+  .toggle-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}

@@ -1,3 +1,5 @@
+@use "./color-variables" as *;
+
 $body-font: "Inter", sans-serif;
 $heading-font: "Space Grotesk", monospace;
 
@@ -6,3 +8,6 @@ $font-weight-500: 500;
 $font-weight-700: 700;
 
 $border-radius-4: 0.4rem;
+
+$box-shadow-bottom: 0 0.4rem 0.5rem 0.4rem rgba($color: $color-neutral-500, $alpha: 0.1);
+$box-shadow-right-bottom: 0.2rem 0.4rem 0.5rem 0.4rem rgba($color: $color-neutral-500, $alpha: 0.1);

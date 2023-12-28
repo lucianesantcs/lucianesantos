@@ -1,32 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { LinkComponent } from '../link/link.component';
 import { ILink } from '../link/link.interface';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [LinkComponent],
+  imports: [LinkComponent, ButtonComponent],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
 export class NavigationComponent {
-  public navLinks: ILink[] = [
-    {
-      routerLink: '/about',
-      routerLinkLabel: 'Sobre',
-    },
-    {
-      routerLink: '/experience',
-      routerLinkLabel: 'Experiência',
-    },
-    {
-      routerLink: '/projects',
-      routerLinkLabel: 'Projetos',
-      showIcon: true
-    },
-    {
-      routerLink: '/contact',
-      routerLinkLabel: 'Contato',
-    },
-  ];
+  @Input({ required: true }) navLinks!: ILink[];
 }
