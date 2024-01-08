@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
+import { BreakpointsService } from '../../services/breakpoints/breakpoints.service';
+import { ButtonComponent } from '../button/button.component';
 import { LinkComponent } from '../link/link.component';
 import { ILink } from '../link/link.interface';
-import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-navigation',
@@ -12,4 +13,15 @@ import { ButtonComponent } from '../button/button.component';
 })
 export class NavigationComponent {
   @Input({ required: true }) navLinks!: ILink[];
+
+  private breakPoints = inject(BreakpointsService);
+  protected isSMbreakPoint!: boolean;
+  protected isMDbreakPoint!: boolean;
+
+  constructor() {
+    this.breakPoints.getBreakpoint(['sm', 'md']).subscribe(({ sm, md }) => {
+      this.isSMbreakPoint = sm;
+      this.isMDbreakPoint = md;
+    });
+  }
 }

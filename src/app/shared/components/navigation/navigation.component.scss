@@ -1,6 +1,12 @@
+@use "../../../../assets/styles/base/index.scss" as *;
+
 nav {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   gap: 6.4rem;
+
+  @include md {
+    gap: 2.4rem;
+  }
 }

@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ILink } from '../link/link.interface';
 import { ToggleIconComponent } from '../toggle-icon/toggle-icon.component';
 import { IToggleIconProps } from '../toggle-icon/toggle-icon.interface';
+import { BreakpointsService } from '../../services/breakpoints/breakpoints.service';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +14,17 @@ import { IToggleIconProps } from '../toggle-icon/toggle-icon.interface';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  private breakPoints = inject(BreakpointsService);
+  protected isSMbreakPoint!: boolean;
+  protected isMDbreakPoint!: boolean;
+
+  constructor() {
+    this.breakPoints.getBreakpoint(['sm', 'md'])?.subscribe(({ sm, md }) => {
+      this.isSMbreakPoint = sm;
+      this.isMDbreakPoint = md;
+    });
+  }
+
   public navLinks: ILink[] = [
     {
       routerLink: '/about',

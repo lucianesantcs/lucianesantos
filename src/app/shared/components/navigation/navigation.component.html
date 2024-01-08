@@ -1,10 +1,12 @@
 <nav>
-  @for (link of navLinks; track $index) {
-    <app-link
-      [routerLink]="link.routerLink"
-      [routerLinkLabel]="link.routerLinkLabel"
-      [showIcon]="link.showIcon"
-      [iconProps]="link.iconProps"
-    />
+  @if (!isSMbreakPoint) {
+    @for (link of navLinks; track $index) {
+      <app-link
+        [routerLink]="link.routerLink"
+        [routerLinkLabel]="link.routerLinkLabel"
+        [showIcon]="link.showIcon"
+        [iconProps]="link.iconProps"
+      />
+    }
   }
 </nav>
