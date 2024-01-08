@@ -1,4 +1,5 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { LayoutModule } from '@angular/cdk/layout';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -33,9 +34,14 @@ export const importedLucideIcons = {
   X,
 };
 
+const MODULES = [LayoutModule];
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    importProvidersFrom(LucideAngularModule.pick(importedLucideIcons)),
+    importProvidersFrom(
+      ...MODULES,
+      LucideAngularModule.pick(importedLucideIcons),
+    ),
   ],
 };
