@@ -1,6 +1,6 @@
 import { IIcon } from '../icon/icon.interface';
 
-export interface ILink {
+export interface IRouterLink {
   routerLink: string;
   routerLinkLabel: string;
   showIcon?: boolean;

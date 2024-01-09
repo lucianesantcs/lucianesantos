@@ -1,18 +1,18 @@
 import { Component, Input, inject } from '@angular/core';
 import { BreakpointsService } from '../../services/breakpoints/breakpoints.service';
 import { ButtonComponent } from '../button/button.component';
-import { LinkComponent } from '../link/link.component';
-import { ILink } from '../link/link.interface';
+import { RouterLinkComponent } from '../router-link/router-link.component';
+import { IRouterLink } from '../router-link/router-link.interface';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [LinkComponent, ButtonComponent],
+  imports: [RouterLinkComponent, ButtonComponent],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
 export class NavigationComponent {
-  @Input({ required: true }) navLinks!: ILink[];
+  @Input({ required: true }) navLinks!: IRouterLink[];
 
   private breakPoints = inject(BreakpointsService);
   protected isSMbreakPoint!: boolean;

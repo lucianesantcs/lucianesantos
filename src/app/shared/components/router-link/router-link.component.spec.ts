@@ -8,23 +8,23 @@ import {
 import { RouterTestingModule } from '@angular/router/testing';
 import { Location } from '@angular/common';
 
-import { LinkComponent } from './link.component';
+import { RouterLinkComponent } from './router-link.component';
 import { RouterLink, RouterLinkWithHref, Router } from '@angular/router';
 import { By } from '@angular/platform-browser';
 import { LucideAngularModule, MoveRight } from 'lucide-angular';
 import { DebugElement } from '@angular/core';
 
-describe('LinkComponent', () => {
-  let component: LinkComponent;
+describe('RouterLinkComponent', () => {
+  let component: RouterLinkComponent;
   let componentDe: DebugElement;
-  let fixture: ComponentFixture<LinkComponent>;
+  let fixture: ComponentFixture<RouterLinkComponent>;
   let router: Router;
   let location: Location;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        LinkComponent,
+        RouterLinkComponent,
         RouterLink,
         RouterTestingModule.withRoutes([]),
         LucideAngularModule.pick({ MoveRight }),
@@ -35,7 +35,7 @@ describe('LinkComponent', () => {
     router = TestBed.inject(Router);
     location = TestBed.inject(Location);
 
-    fixture = TestBed.createComponent(LinkComponent);
+    fixture = TestBed.createComponent(RouterLinkComponent);
     component = fixture.componentInstance;
     componentDe = fixture.debugElement;
     fixture.detectChanges();

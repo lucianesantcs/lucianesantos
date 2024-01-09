@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ILink } from '../link/link.interface';
+import { IRouterLink } from '../router-link/router-link.interface';
 import { ToggleIconComponent } from '../toggle-icon/toggle-icon.component';
 import { IToggleIconProps } from '../toggle-icon/toggle-icon.interface';
 import { BreakpointsService } from '../../services/breakpoints/breakpoints.service';
@@ -25,7 +25,7 @@ export class HeaderComponent {
     });
   }
 
-  public navLinks: ILink[] = [
+  public navLinks: IRouterLink[] = [
     {
       routerLink: '/about',
       routerLinkLabel: 'Sobre',
