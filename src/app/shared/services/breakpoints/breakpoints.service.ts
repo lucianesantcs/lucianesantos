@@ -1,7 +1,8 @@
 import { Injectable, inject } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import { BREAKPOINTS_VALUES } from './breakpoints.enum';
+import { BREAKPOINTS_VALUES } from './breakpoints.const';
 import { Observable, map } from 'rxjs';
+import { BreakpointType } from './breakpoints.type';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,7 @@ export class BreakpointsService {
   public breakpointObserver$ = inject(BreakpointObserver);
 
   public getBreakpoint(
-    breakpoint: readonly string[],
+    breakpoint: readonly BreakpointType[],
     widthType?: string,
   ): Observable<{ [key: string]: boolean }> {
     const widthTypeValue = widthType ?? 'max-width';
@@ -34,7 +35,7 @@ export class BreakpointsService {
   }
 
   private mapBreakpoints(
-    breakpoint: readonly string[],
+    breakpoint: readonly BreakpointType[],
     breakpointsValues: typeof BREAKPOINTS_VALUES,
     widthTypeValue?: string,
   ): string[] {

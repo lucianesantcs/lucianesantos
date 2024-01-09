@@ -1,9 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 
 import { BreakpointsService } from './breakpoints.service';
-import { BREAKPOINTS_VALUES } from './breakpoints.enum';
+import { BREAKPOINTS_VALUES } from './breakpoints.const';
+import { BreakpointType } from './breakpoints.type';
 
-const breakpoint = ['xs', 'md', 'xl'];
+const breakpoint = ['xs', 'md', 'xl'] as BreakpointType[];
 const widthTypeValue = 'max-width';
 
 describe('BreakpointsService', () => {
