@@ -1,6 +1,6 @@
 ![image](https://github.com/lucianesantcs/site-pessoal/assets/52360898/a979977b-f7f7-4957-8fe9-82835edd8187)
 
-Redesign da versão 1 (portfólio) - [Código fonte](https://github.com/lucianesantcs/portfolio/tree/master), feito em 2021 para Site Pessoal.
+Redesign para Site Pessoal da versão 1 (portfólio) - [Código fonte](https://github.com/lucianesantcs/portfolio/tree/master), feito em 2021.
 
 Criado com componentes e suas variantes; tipografia baseada no Material Design; ilustrações do site storyset; ícones do lucide Icons; usado tints.dev para criação da paleta de cores (também plugin Foundation no figma); Local variables e Tokens; auto layout. O link do figma está disponível para quem quiser dar uma olhada + resources usado durante o design.
 
