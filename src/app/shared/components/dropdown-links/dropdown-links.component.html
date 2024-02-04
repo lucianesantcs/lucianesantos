@@ -1,0 +1,9 @@
+<ul class="dropdown">
+  @for (link of links; track link) {
+    <li class="dropdown-item">
+      <app-link (selectedLink)="onSelect($event)" [link]="link" class="link">
+        {{ link?.name }}
+      </app-link>
+    </li>
+  }
+</ul>
