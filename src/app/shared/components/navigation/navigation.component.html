@@ -1,12 +1,20 @@
 <nav>
   @if (!isSMbreakPoint) {
-    @for (link of navLinks; track $index) {
+    @for (link of navLinks; track link) {
       <app-router-link
         [routerLink]="link.routerLink"
         [routerLinkLabel]="link.routerLinkLabel"
         [showIcon]="link.showIcon"
         [iconProps]="link.iconProps"
+        (click)="colapseDropdownLinksClick(link)"
       />
     }
   }
 </nav>
+
+@if (colapseDropdownLinks && showDropdown) {
+  <app-dropdown-links
+    [links]="dropdownLinks"
+    (selectedLink)="selectedLink($event)"
+  />
+}

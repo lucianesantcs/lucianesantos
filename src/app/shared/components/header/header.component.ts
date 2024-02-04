@@ -5,6 +5,7 @@ import { IRouterLink } from '../router-link/router-link.interface';
 import { ToggleIconComponent } from '../toggle-icon/toggle-icon.component';
 import { IToggleIconProps } from '../toggle-icon/toggle-icon.interface';
 import { BreakpointsService } from '../../services/breakpoints/breakpoints.service';
+import { ILink } from '../link/link.interface';
 
 @Component({
   selector: 'app-header',
@@ -37,6 +38,7 @@ export class HeaderComponent {
     {
       routerLink: '/projects',
       routerLinkLabel: 'Projetos',
+      isCollapsible: true,
       showIcon: true,
       iconProps: {
         iconName: 'ChevronDown',
@@ -45,6 +47,59 @@ export class HeaderComponent {
     {
       routerLink: '/contact',
       routerLinkLabel: 'Contato',
+    },
+  ];
+
+  public dropdownLinks: ILink[] = [
+    {
+      name: 'Todos',
+      key: 'all',
+      active: true,
+    },
+    {
+      name: 'Meus códigos',
+      key: 'my-codes',
+      active: false,
+    },
+    {
+      name: 'Angular',
+      key: 'angular',
+      active: false,
+    },
+    {
+      name: 'React JS/TS',
+      key: 'react',
+      active: false,
+    },
+    {
+      name: 'HTML & CSS/SCC',
+      key: 'html-css',
+      active: false,
+    },
+    {
+      name: 'JavaScript/TS',
+      key: 'javascript',
+      active: false,
+    },
+    {
+      name: 'Frontend',
+      key: 'frontend',
+      active: false,
+    },
+    {
+      name: 'Backend',
+      key: 'backend',
+      active: false,
+    },
+    {
+      name: 'Layouts',
+      key: 'layouts',
+      active: false,
+    },
+    {
+      name: 'Contribuição',
+      key: 'contribution',
+      active: false,
     },
   ];
 

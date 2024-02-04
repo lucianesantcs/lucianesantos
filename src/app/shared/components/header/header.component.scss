@@ -2,6 +2,7 @@
 
 .header {
   box-shadow: $box-shadow-bottom;
+  position: relative;
 
   &-container {
     display: flex;
