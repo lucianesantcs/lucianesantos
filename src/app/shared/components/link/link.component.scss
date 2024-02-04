@@ -1,0 +1,12 @@
+@use "../../../../assets/styles/components/link" as *;
+@use "../../../../assets/styles/base" as *;
+
+.link {
+  @include link-default-12;
+
+  cursor: pointer;
+
+  &.active {
+    color: $navigation-primary-active;
+  }
+}

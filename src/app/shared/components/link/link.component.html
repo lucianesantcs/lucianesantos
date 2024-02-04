@@ -1,0 +1,11 @@
+<a
+  (click)="onSelect(link)"
+  (keypress)="onSelect(link)"
+  tabindex="0"
+  class="link"
+  [class.active]="link.active"
+  [attr.aria-label]="link.name"
+  [class.active]="link.active"
+>
+  {{ link.name }}
+</a>
