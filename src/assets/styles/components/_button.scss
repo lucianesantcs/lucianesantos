@@ -11,12 +11,20 @@ button {
   padding: 0;
   padding-block: 0;
   padding-inline: 0;
-  background-color: $surface-primary;
+  background-color: transparent;
   color: inherit;
   line-height: normal;
   -webkit-appearance: none;
   appearance: none;
   transition: ease-in-out 0.3s;
+  border-radius: $border-radius-4;
+}
+
+.button-default {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  background-color: $surface-primary;
 
   &:hover {
     background-color: $surface-primary-inverted;
@@ -30,11 +38,17 @@ button {
   }
 }
 
-.button-default {
-  display: flex;
-  align-items: center;
-  padding: 0.8rem 1.2rem;
-  border-radius: $border-radius-4;
+.button-link-default {
+  &:hover {
+    background-color: transparent;
+    color: $content-primary-inverted;
+  }
+
+  &:disabled {
+    background-color: $surface-disabled;
+    color: $content-disabled;
+    cursor: not-allowed;
+  }
 }
 
 @mixin button-default-32 {
@@ -50,4 +64,12 @@ button {
 
   gap: 0.4rem;
   padding: 0.4rem 0.8rem;
+}
+
+@mixin button-link-default {
+  @include button-link;
+  @extend .button-link-default;
+
+  gap: 0.4rem;
+  padding: 0.2rem 0.4rem;
 }
