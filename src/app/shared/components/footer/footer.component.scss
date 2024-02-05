@@ -1,0 +1,24 @@
+@use "../../../../assets/styles/base/index.scss" as *;
+
+.footer {
+  position: relative;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 144rem;
+    padding: 2.4rem 8rem;
+    margin: 0 auto;
+    gap: 1.2rem;
+    bottom: 0;
+
+    @include breakpoint(850px) {
+      padding: 2.4rem 2.4rem;
+    }
+
+    .title {
+      @include heading-6;
+    }
+  }
+}
