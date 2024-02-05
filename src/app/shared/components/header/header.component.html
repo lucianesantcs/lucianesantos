@@ -2,12 +2,10 @@
   <div class="header-container">
     <app-navigation [navLinks]="navLinks" [dropdownLinks]="dropdownLinks" />
 
-    @if (!isMDbreakPoint) {
-      <span class="toggle-icons">
-        @for (toggle of toggleIcons; track $index) {
-          <app-toggle-icon [toggleIconProps]="toggle"></app-toggle-icon>
-        }
-      </span>
-    }
+    <span class="toggle-icons">
+      @for (toggle of toggleIcons; track $index) {
+        <app-toggle-icon [toggleIconProps]="toggle"></app-toggle-icon>
+      }
+    </span>
   </div>
 </header>
