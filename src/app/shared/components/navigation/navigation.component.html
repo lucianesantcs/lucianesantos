@@ -9,6 +9,17 @@
         (click)="colapseDropdownLinksClick(link)"
       />
     }
+  } @else {
+    <app-button
+      [buttonProps]="{
+        showIcon: true
+      }"
+      [iconProps]="{
+        iconName: 'Menu',
+        iconSize: 16
+      }"
+      (click)="colapseDropdownLinksClick()"
+    />
   }
 </nav>
 

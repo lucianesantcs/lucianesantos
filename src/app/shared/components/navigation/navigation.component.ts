@@ -32,7 +32,13 @@ export class NavigationComponent {
     });
   }
 
-  protected colapseDropdownLinksClick(routerLink: IRouterLink): void {
+  protected colapseDropdownLinksClick(routerLink?: IRouterLink): void {
+    if (!routerLink) {
+      this.showDropdown = !this.showDropdown;
+      this.colapseDropdownLinks = this.showDropdown;
+      return;
+    }
+
     if (!this.showDropdown && routerLink?.isCollapsible) {
       this.showDropdown = true;
       this.colapseDropdownLinks = routerLink?.isCollapsible;
