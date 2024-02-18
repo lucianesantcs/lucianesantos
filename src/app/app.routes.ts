@@ -1,19 +1,20 @@
 import { Routes } from '@angular/router';
-import { MainComponent } from './shared/layouts/pages/main/main.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 export const routes: Routes = [
   {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'experience',
+    component: ExperienceComponent,
+  },
+  {
     path: '',
-    component: MainComponent,
-    children: [
-      {
-        path: '',
-        loadComponent: () =>
-          import('./pages/about/about.component').then(
-            (it) => it.AboutComponent,
-          ),
-      },
-    ],
+    redirectTo: '/about',
+    pathMatch: 'full',
   },
   {
     path: '**',

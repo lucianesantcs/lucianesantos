@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
-import { RouterTestingModule } from '@angular/router/testing';
 import { IRouterLink } from '../router-link/router-link.interface';
 import { ToggleIconComponent } from '../toggle-icon/toggle-icon.component';
 import { IToggleIconProps } from '../toggle-icon/toggle-icon.interface';
@@ -10,7 +9,7 @@ import { ILink } from '../link/link.interface';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterTestingModule, NavigationComponent, ToggleIconComponent],
+  imports: [NavigationComponent, ToggleIconComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
