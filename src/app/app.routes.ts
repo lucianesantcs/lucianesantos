@@ -1,15 +1,19 @@
 import { Routes } from '@angular/router';
+import { MainComponent } from './shared/layouts/pages/main/main.component';
 
 export const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'about',
-  },
-  {
-    path: 'about',
-    loadComponent: () =>
-      import('./pages/about/about.component').then((it) => it.AboutComponent),
+    component: MainComponent,
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./pages/about/about.component').then(
+            (it) => it.AboutComponent,
+          ),
+      },
+    ],
   },
   {
     path: '**',
