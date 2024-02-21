@@ -1,5 +1,10 @@
 @use "../../../../assets/styles/base/typography" as *;
+@use "../../../../assets/styles/base/mixins" as *;
 
 .title {
-    @include heading-2;
+  @include heading-2;
+
+  @include lg {
+    @include heading-3;
   }
+}

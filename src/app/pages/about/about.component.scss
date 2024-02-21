@@ -1,4 +1,5 @@
 @use "../../../assets/styles/base/typography" as *;
+@use "../../../assets/styles/base/mixins" as *;
 
 .main-container {
   display: flex;
@@ -20,7 +21,7 @@
       }
 
       .d {
-        width: 100%
+        width: 100%;
       }
 
       .paragraph {
@@ -36,5 +37,10 @@
 
   .right-section {
     max-width: 64rem;
+
+    @include xl {
+      display: none;
+      visibility: hidden;
+    }
   }
 }
