@@ -1,0 +1,5 @@
+@use "../../../../assets/styles/base/typography" as *;
+
+.title {
+    @include heading-2;
+  }
