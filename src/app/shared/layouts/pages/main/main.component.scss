@@ -1,7 +1,13 @@
+@use "../../../../../assets/styles/base/mixins" as *;
+
 .main {
   max-width: 144rem;
   min-height: calc(100vh - 16rem);
   max-height: calc(100% - 16rem);
   padding: 0 8rem;
   margin: 0 auto;
+
+  @include breakpoint(850px) {
+    padding: 0 2.4rem;
+  }
 }
