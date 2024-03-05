@@ -14,7 +14,7 @@
     margin: 0 auto;
     gap: 1.2rem;
 
-    @include breakpoint(850px) {
+    @include breakpoint($bp: 850px) {
       padding: 2.4rem 2.4rem;
     }
 
