@@ -1,6 +1,4 @@
-@use "../base/typography" as *;
-@use "../base/color-tokens" as *;
-@use "../base/variables" as *;
+@use "../base" as *;
 
 button {
   font: inherit;
@@ -26,9 +24,14 @@ button {
   padding: 0.8rem 1.2rem;
   background-color: $surface-primary;
 
-  &:hover {
-    background-color: $surface-primary-inverted;
-    color: $content-primary-inverted;
+  @include breakpoint(
+    $bp: map-get($breakpoints, "md"),
+    $width-type: min-width
+  ) {
+    &:hover {
+      background-color: $surface-primary-inverted;
+      color: $content-primary-inverted;
+    }
   }
 
   &:disabled {
@@ -39,9 +42,14 @@ button {
 }
 
 .button-link-default {
-  &:hover {
-    background-color: transparent;
-    color: $content-primary-inverted;
+  @include breakpoint(
+    $bp: map-get($breakpoints, "md"),
+    $width-type: min-width
+  ) {
+    &:hover {
+      background-color: transparent;
+      color: $content-primary-inverted;
+    }
   }
 
   &:disabled {
