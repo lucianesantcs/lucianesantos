@@ -16,12 +16,22 @@
     gap: 3.2rem;
 
     .text-container {
-      .intro {
-        @include heading-6;
+      @include sm {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
       }
 
-      .d {
-        width: 100%;
+      .title {
+        @include sm {
+          display: flex;
+          flex-direction: column;
+          gap: 0.08rem;
+        }
+
+        .intro {
+          @include heading-6;
+        }
       }
 
       .paragraph {
