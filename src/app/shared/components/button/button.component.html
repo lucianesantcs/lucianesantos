@@ -1,4 +1,4 @@
-<button class="button">
+<button class="button" (click)="click($event)" [class.active]="buttonProps.isActive">
   @if (buttonProps.showLabel && buttonProps.label) {
     {{ buttonProps.label }}
   }

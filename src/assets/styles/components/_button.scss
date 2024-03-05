@@ -51,11 +51,16 @@ button {
   }
 }
 
-@mixin button-default-32 {
+@mixin button-default-32($isActive: false) {
   @include button;
   @extend .button-default;
 
   gap: 0.8rem;
+
+  @if $isActive {
+    background-color: $surface-primary-inverted;
+    color: $content-primary-inverted;
+  }
 }
 
 @mixin button-default-24 {

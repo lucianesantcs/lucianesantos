@@ -2,7 +2,15 @@
 @use "../../../../assets/styles/base/typography" as *;
 
 .button {
-  @include button-default-32;
+  @include button-default-32();
+
+  &.active {
+    @include button-default-32($isActive: true);
+  }
+
+  > * {
+    pointer-events: none;
+  }
 
   .overline-label {
     @include overline-bold;

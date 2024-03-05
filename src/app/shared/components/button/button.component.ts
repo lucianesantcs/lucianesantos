@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IconComponent } from '../icon/icon.component';
-import { IButton } from './button.interface';
+import { IButton, IButtonEventProps } from './button.interface';
 
 @Component({
   selector: 'app-button',
@@ -12,4 +12,13 @@ import { IButton } from './button.interface';
 export class ButtonComponent {
   @Input({ required: true }) buttonProps!: IButton;
   @Input() iconProps?: IButton['iconProps'];
+  @Output() clickEvent = new EventEmitter<IButtonEventProps>();
+
+  public click(event: Event) {
+    this.clickEvent.emit({
+      eventTarget: event?.target,
+      buttonProps: this.buttonProps,
+      iconProps: this.iconProps,
+    });
+  }
 }
