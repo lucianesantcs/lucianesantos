@@ -2,6 +2,7 @@
   [navLinks]="navLinks"
   [dropdownLinks]="dropdownLinks"
   [toggleIcons]="toggleIcons"
+  (toggleEvent)="toggle($event)"
 />
 <main class="main">
   <router-outlet />

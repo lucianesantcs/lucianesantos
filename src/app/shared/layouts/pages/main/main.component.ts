@@ -6,6 +6,7 @@ import { ILink } from '../../../components/link/link.interface';
 import { IRouterLink } from '../../../components/router-link/router-link.interface';
 import { IToggleIconProps } from '../../../components/toggle-icon/toggle-icon.interface';
 import { DROPDOWN_LINKS, NAV_LINKS, TOGGLE_ICONS } from './main.const';
+import { IButtonEventProps } from '../../../components/button/button.interface';
 
 @Component({
   selector: 'app-main',
@@ -18,4 +19,9 @@ export class MainComponent {
   public navLinks: IRouterLink[] = NAV_LINKS;
   public dropdownLinks: ILink[] = DROPDOWN_LINKS;
   public toggleIcons: IToggleIconProps[] = TOGGLE_ICONS;
+
+  public toggle(target: IButtonEventProps) {
+    // TODO: implementar lógica dark/light
+    // TODO: implementar lógica translate
+  }
 }
