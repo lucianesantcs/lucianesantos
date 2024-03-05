@@ -3,8 +3,8 @@
     <app-navigation [navLinks]="navLinks" [dropdownLinks]="dropdownLinks" />
 
     <span class="toggle-icons">
-      @for (toggle of toggleIcons; track $index) {
-        <app-toggle-icon [toggleIconProps]="toggle"></app-toggle-icon>
+      @for (toggleIcon of toggleIcons; track $index) {
+        <app-toggle-icon [toggleIconProps]="toggleIcon" (toggleEvent)="toggle($event)"></app-toggle-icon>
       }
     </span>
   </div>
