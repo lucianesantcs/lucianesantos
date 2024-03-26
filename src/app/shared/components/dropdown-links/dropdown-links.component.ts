@@ -1,3 +1,4 @@
+import { CdkOverlayOrigin, OverlayModule } from '@angular/cdk/overlay';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { LinkComponent } from '../link/link.component';
 import { ILink } from '../link/link.interface';
@@ -5,16 +6,19 @@ import { ILink } from '../link/link.interface';
 @Component({
   selector: 'app-dropdown-links',
   standalone: true,
-  imports: [LinkComponent],
+  imports: [OverlayModule, LinkComponent],
   templateUrl: './dropdown-links.component.html',
   styleUrl: './dropdown-links.component.scss',
 })
 export class DropdownLinksComponent implements OnInit {
   @Input() links: ILink[] = [];
-  @Output() selectedLink = new EventEmitter<ILink>();
+  @Input() triggerOriginReference!: CdkOverlayOrigin;
+  @Input() isDropdownOpen!: boolean;
+  @Output() selectedLinkEvent = new EventEmitter<ILink>();
+  @Output() isDropdownOpenEvent = new EventEmitter<boolean>();
 
   ngOnInit(): void {
-    this.selectedLink.emit(this.links[0]);
+    this.selectedLinkEvent.emit(this.links[0]);
   }
 
   onSelect(link: ILink) {
@@ -27,6 +31,6 @@ export class DropdownLinksComponent implements OnInit {
     });
 
     this.links = [...this.links];
-    this.selectedLink.emit(link);
+    this.selectedLinkEvent.emit(link);
   }
 }

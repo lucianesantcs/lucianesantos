@@ -6,6 +6,10 @@ nav {
   align-items: center;
   gap: 6.4rem;
 
+  .show-dropdown {
+    position: absolute;
+  }
+
   @include md {
     gap: 2.4rem;
   }

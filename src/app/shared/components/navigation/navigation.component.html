@@ -6,8 +6,19 @@
         [routerLinkLabel]="link.routerLinkLabel"
         [showIcon]="link.showIcon"
         [iconProps]="link.iconProps"
+        cdkOverlayOrigin
+        #trigger="cdkOverlayOrigin"
         (click)="colapseDropdownLinksClick(link)"
       />
+      @if (link?.isCollapsible) {
+        <app-dropdown-links
+          [class.show-dropdown]="link?.isCollapsible ?? null"
+          [links]="dropdownLinks"
+          [triggerOriginReference]="trigger"
+          [isDropdownOpen]="showDropdown"
+          (selectedLinkEvent)="selectedLink($event)"
+        ></app-dropdown-links>
+      }
     }
   } @else {
     <app-button
@@ -18,14 +29,16 @@
         iconName: 'Menu',
         iconSize: 16
       }"
-      (click)="colapseDropdownLinksClick()"
+      cdkOverlayOrigin
+      #trigger="cdkOverlayOrigin"
+      (click)="colapseDropdownLinksClick('mobile')"
     />
+    <app-dropdown-links
+      [class.show-dropdown]="null"
+      [links]="dropdownLinks"
+      [triggerOriginReference]="trigger"
+      [isDropdownOpen]="showDropdown"
+      (selectedLinkEvent)="selectedLink($event)"
+    ></app-dropdown-links>
   }
 </nav>
-
-@if (colapseDropdownLinks && showDropdown) {
-  <app-dropdown-links
-    [links]="dropdownLinks"
-    (selectedLink)="selectedLink($event)"
-  />
-}

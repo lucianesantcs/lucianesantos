@@ -1,15 +1,21 @@
+import { OverlayModule } from '@angular/cdk/overlay';
 import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { BreakpointsService } from '../../services/breakpoints/breakpoints.service';
 import { ButtonComponent } from '../button/button.component';
-import { RouterLinkComponent } from '../router-link/router-link.component';
-import { IRouterLink } from '../router-link/router-link.interface';
 import { DropdownLinksComponent } from '../dropdown-links/dropdown-links.component';
 import { ILink } from '../link/link.interface';
+import { RouterLinkComponent } from '../router-link/router-link.component';
+import { IRouterLink } from '../router-link/router-link.interface';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [RouterLinkComponent, ButtonComponent, DropdownLinksComponent],
+  imports: [
+    OverlayModule,
+    RouterLinkComponent,
+    ButtonComponent,
+    DropdownLinksComponent,
+  ],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
@@ -32,18 +38,16 @@ export class NavigationComponent {
     });
   }
 
-  protected colapseDropdownLinksClick(routerLink?: IRouterLink): void {
-    if (!routerLink) {
+  protected colapseDropdownLinksClick(routerLink?: IRouterLink | string): void {
+    const routerLinkType = routerLink as IRouterLink;
+    const routerLinkString = routerLink as string;
+
+    if (routerLinkType?.isCollapsible) {
       this.showDropdown = !this.showDropdown;
-      this.colapseDropdownLinks = this.showDropdown;
-      return;
     }
 
-    if (!this.showDropdown && routerLink?.isCollapsible) {
-      this.showDropdown = true;
-      this.colapseDropdownLinks = routerLink?.isCollapsible;
-    } else {
-      this.showDropdown = false;
+    if (routerLinkString === 'mobile') {
+      this.showDropdown = !this.showDropdown;
     }
   }
 
