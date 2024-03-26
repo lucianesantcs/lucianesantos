@@ -1,4 +1,23 @@
-<button class="button" (click)="click($event)" [class.active]="buttonProps.isActive">
+@if (!buttonProps.isHref) {
+  <button
+    class="button"
+    (click)="click($event)"
+    [class.active]="buttonProps.isActive"
+  >
+    <ng-container [ngTemplateOutlet]="buttonPropsRef"></ng-container>
+  </button>
+} @else {
+  <a
+    class="button"
+    [class.active]="buttonProps.isActive"
+    [href]="buttonProps.href"
+    [target]="buttonProps.href"
+  >
+    <ng-container [ngTemplateOutlet]="buttonPropsRef"></ng-container>
+  </a>
+}
+
+<ng-template #buttonPropsRef>
   @if (buttonProps.showLabel && buttonProps.label) {
     {{ buttonProps.label }}
   }
@@ -10,4 +29,4 @@
   @if (buttonProps.showIcon && buttonProps.overlineLabel) {
     <span class="overline-label">{{ buttonProps.overlineLabel }}</span>
   }
-</button>
+</ng-template>

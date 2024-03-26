@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IconComponent } from '../icon/icon.component';
 import { IButton, IButtonEventProps } from './button.interface';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [IconComponent],
+  imports: [CommonModule, IconComponent],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
 })

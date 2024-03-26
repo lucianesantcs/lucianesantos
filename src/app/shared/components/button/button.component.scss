@@ -1,8 +1,10 @@
 @use "../../../../assets/styles/components/button" as *;
 @use "../../../../assets/styles/base/typography" as *;
+@use "../../../../assets/styles/base/variables" as *;
 
 .button {
-  @include button-default-32();
+  @include button-default-32;
+  border-radius: $border-radius-4;
 
   &.active {
     @include button-default-32($isActive: true);

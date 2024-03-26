@@ -7,6 +7,8 @@ export interface IButton {
   label?: string;
   overlineLabel?: string;
   isActive?: boolean;
+  isHref?: boolean;
+  href?: string;
 }
 
 export interface IButtonEventProps {
