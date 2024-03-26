@@ -4,7 +4,9 @@ import { ButtonComponent } from '../../shared/components/button/button.component
 import { IconComponent } from '../../shared/components/icon/icon.component';
 import { SubTitleComponent } from '../../shared/components/sub-title/sub-title.component';
 import { TitleComponent } from '../../shared/components/title/title.component';
-import { ISocialIcons } from './about.interface';
+import { ISocialIcons, ISocialLinksMapper } from './about.interface';
+import { IButtonEventProps } from '../../shared/components/button/button.interface';
+import { SOCIAL_ICONS } from './about.const';
 
 @Component({
   selector: 'app-about',
@@ -20,38 +22,18 @@ import { ISocialIcons } from './about.interface';
   styleUrl: './about.component.scss',
 })
 export class AboutComponent {
-  public socialIcons: ISocialIcons[] = [
-    {
-      buttonProps: {
-        showIcon: true,
-      },
-      iconProps: {
-        iconName: 'Github',
-      },
-    },
-    {
-      buttonProps: {
-        showIcon: true,
-      },
-      iconProps: {
-        iconName: 'Linkedin',
-      },
-    },
-    {
-      buttonProps: {
-        showIcon: true,
-      },
-      iconProps: {
-        iconName: 'Dribbble',
-      },
-    },
-    {
-      buttonProps: {
-        showIcon: true,
-      },
-      iconProps: {
-        iconName: 'Mail',
-      },
-    },
-  ];
+  public socialIcons: ISocialIcons[] = SOCIAL_ICONS;
+
+  protected socialIconRedirect(icon: IButtonEventProps): void {
+    const urls = {
+      Github: 'https://github.com/lucianesantcs',
+      Linkedin: 'https://www.linkedin.com/in/lucianesantcs/',
+      Dribbble: 'https://dribbble.com/lucianesantos'
+    };
+
+    window.open(
+      urls[icon.iconProps?.iconName as keyof ISocialLinksMapper],
+      '_blank',
+    );
+  }
 }

@@ -21,6 +21,7 @@
         <app-button
           [iconProps]="icon.iconProps"
           [buttonProps]="icon.buttonProps"
+          (clickEvent)="socialIconRedirect($event)"
         ></app-button>
       }
     </div>
@@ -28,7 +29,7 @@
   <section class="right-section">
     <img
       ngSrc="assets/images/desktop-computer.svg"
-      alt="Desktop Image"
+      alt="Desktop"
       width="516"
       height="514"
       sizes="100%"
