@@ -14,11 +14,12 @@ export const NAV_LINKS: IRouterLink[] = [
   {
     routerLink: '/projects',
     routerLinkLabel: 'Projetos',
-    isCollapsible: true,
-    showIcon: true,
-    iconProps: {
-      iconName: 'ChevronDown',
-    },
+    // TODO: IMPLEMENTAR DEPOIS
+    // isCollapsible: true,
+    // showIcon: true,
+    // iconProps: {
+    //   iconName: 'ChevronDown',
+    // },
   },
   {
     routerLink: '/contact',
