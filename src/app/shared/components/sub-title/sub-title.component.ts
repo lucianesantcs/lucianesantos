@@ -10,7 +10,7 @@ import { BreakpointsService } from '../../services/breakpoints/breakpoints.servi
 })
 export class SubTitleComponent {
   @Input({ required: true }) subtitle!: string;
-  @Input() suffixSubtitle!: string;
+  @Input() suffixSubtitle?: string;
   @Input() showDivider = true;
 
   private breakPoints = inject(BreakpointsService);

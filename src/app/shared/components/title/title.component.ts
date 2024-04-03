@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TitleComponent {
   @Input({ required: true }) title!: string;
+  @Input() suffixSubtitle!: string;
+  @Input() showDivider = true;
 }

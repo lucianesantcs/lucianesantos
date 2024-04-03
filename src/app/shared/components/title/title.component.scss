@@ -11,4 +11,18 @@
   @include sm {
     @include heading-4;
   }
+
+  & > * {
+    vertical-align: middle;
+  }
+
+  svg {
+    display: inline-block;
+  }
+
+  .suffix-title {
+    @include heading-6;
+
+    margin: 0 1.2rem;
+  }
 }
