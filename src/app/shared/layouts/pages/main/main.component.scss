@@ -2,10 +2,10 @@
 
 .main {
   max-width: 144rem;
-  min-height: calc(100vh - 16rem);
-  max-height: calc(100% - 16rem);
-  padding: 0 8rem;
+  height: calc(100% - 16rem);
+  padding: 1.6rem 8rem;
   margin: 0 auto;
+  overflow-y: auto;
 
   @include breakpoint($bp: 850px) {
     padding: 0 2.4rem;
