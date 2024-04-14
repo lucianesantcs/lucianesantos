@@ -2,7 +2,7 @@
   <div class="title-container">
     <app-title
       title="Experiência"
-      suffixSubtitle="Desenvolvimento de carreira"
+      [suffixSubtitle]="isMDbreakPoint ? '' : 'Desenvolvimento de carreira'"
     ></app-title>
   </div>
 
@@ -22,7 +22,10 @@
         </div>
         <p class="description">{{ section.description }}</p>
       </div>
-      <app-divider></app-divider>
+      <app-divider
+        class="divider"
+        [position]="isXLbreakPoint ? 'horizontal' : 'default'"
+      ></app-divider>
       <div class="skills-container">
         <h4>{{ section.skills.title }}</h4>
         <div class="skills">

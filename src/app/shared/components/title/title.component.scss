@@ -8,6 +8,10 @@
     @include heading-3;
   }
 
+  @include xl {
+    @include heading-4;
+  }
+
   @include sm {
     @include heading-4;
   }
