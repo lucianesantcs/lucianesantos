@@ -1,1 +1,46 @@
-<p>experience works!</p>
+<div class="main-container">
+  <div class="title-container">
+    <app-title
+      title="Experiência"
+      suffixSubtitle="Desenvolvimento de carreira"
+    ></app-title>
+  </div>
+
+  @for (section of sections; track $index) {
+    <div class="section">
+      <div class="job">
+        <div class="title-container">
+          <app-sub-title
+            [subtitle]="section.titleContainer.title"
+            [suffixSubtitle]="section?.titleContainer?.subtitle"
+            [showDivider]="false"
+          ></app-sub-title>
+          <div class="job-info">
+            <p class="location">{{ section.jobInfo.location }}</p>
+            <p class="time">{{ section.jobInfo.time }}</p>
+          </div>
+        </div>
+        <p class="description">{{ section.description }}</p>
+      </div>
+      <app-divider></app-divider>
+      <div class="skills-container">
+        <h4>{{ section.skills.title }}</h4>
+        <div class="skills">
+          @for (skill of section.skills.skills; track $index) {
+            <span class="skill">{{ skill }}</span>
+          }
+        </div>
+      </div>
+    </div>
+    <app-divider position="horizontal"></app-divider>
+  }
+
+  <app-router-link
+    routerLink="/projetos"
+    routerLinkLabel="Confira meus projetos"
+    [showIcon]="true"
+    [iconProps]="{
+      iconName: 'MoveRight'
+    }"
+  ></app-router-link>
+</div>

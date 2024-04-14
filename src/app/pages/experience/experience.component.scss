@@ -1,0 +1,67 @@
+@use "../../../assets/styles/base/typography" as *;
+@use "../../../assets/styles/base/color-tokens" as *;
+
+.main-container {
+  display: grid;
+  gap: 1.2rem;
+
+  .section {
+    display: flex;
+    align-items: center;
+
+    .job {
+      display: grid;
+      gap: 1.6rem;
+      padding: 1.6rem 0;
+      justify-content: center;
+      max-width: 55.735rem;
+
+      .title-container {
+        display: grid;
+        gap: 0.6rem;
+
+        .job-info {
+          display: grid;
+          gap: 0.8rem;
+
+          .location {
+            @include overline-bold;
+          }
+
+          .time {
+            @include subtitle-3;
+            color: $subtitle-primary;
+          }
+        }
+      }
+
+      .description {
+        @include body-1;
+      }
+    }
+
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      max-width: 55.735rem;
+
+      h4 {
+        @include heading-6;
+      }
+
+      .skills {
+        .skill {
+          @include body-1;
+
+          display: inline-block;
+
+          &:not(:last-child)::after {
+            content: "\b7";
+            margin: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
