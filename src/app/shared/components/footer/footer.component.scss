@@ -2,6 +2,7 @@
 
 .footer {
   position: relative;
+  box-shadow: $box-shadow-top;
 
   &-container {
     display: flex;
