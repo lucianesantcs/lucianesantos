@@ -1,0 +1,58 @@
+<div class="main-container">
+  <div class="section">
+    <div class="title-container">
+      <app-title
+        title="Contato"
+        [suffixSubtitle]="isMDbreakPoint ? '' : 'Para mais informações'"
+      ></app-title>
+      <p class="paragraph">
+        Embora atualmente não esteja procurando nenhuma nova oportunidade, fique
+        a vontade para entrar em contato através das minhas redes sociais, email
+        <a href="mailto:lucianesantcs@gmail.com"
+          ><strong>lucianesantcs</strong></a
+        >
+        ou enviando uma mensagem preenchendo os seus dados no formulário para
+        assuntos sobre freelance em projetos de curto prazo, colaborações, ou
+        até mesmo se precisar de assistência em algum projeto.
+      </p>
+    </div>
+
+    <div class="social-icons">
+      @for (icon of socialIcons; track $index) {
+        <app-button
+          [iconProps]="icon.iconProps"
+          [buttonProps]="icon.buttonProps"
+          (clickEvent)="socialIconRedirect($event)"
+        ></app-button>
+      }
+    </div>
+  </div>
+  <app-divider
+    class="divider"
+    [position]="isXLbreakPoint ? 'horizontal' : 'default'"
+  ></app-divider>
+  <div class="section">
+    <form>
+      <div class="input-container">
+        <div class="input-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+      </div>
+
+      <app-button
+        [buttonProps]="{ label: 'Enviar', showLabel: true }"
+      ></app-button>
+    </form>
+  </div>
+</div>

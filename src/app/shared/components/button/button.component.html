@@ -26,7 +26,7 @@
     <app-icon [size]="iconProps.iconSize" [name]="iconProps.iconName" />
   }
 
-  @if (buttonProps.showIcon || buttonProps.overlineLabel) {
+  @if (buttonProps.overlineLabel) {
     <span class="overline-label">{{ buttonProps.overlineLabel }}</span>
   }
 </ng-template>
