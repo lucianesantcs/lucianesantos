@@ -1,0 +1,52 @@
+@use "../../../../assets/styles/base" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  background-color: $surface-light;
+  width: 100%;
+  box-shadow: $box-shadow-right-bottom;
+  border: 1px solid $border-primary;
+  border-radius: 0.4rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    .img {
+      width: 100%;
+      background-color: black;
+      border-radius: 0.2rem;
+      color: $surface-primary;
+      min-height: 19.2rem;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      padding: 0.8rem;
+
+      h3 {
+        @include heading-6;
+      }
+
+      .description {
+        @include subtitle-3;
+      }
+
+      .button-container {
+        display: flex;
+        gap: 1.2rem;
+
+        @include sm {
+          .button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

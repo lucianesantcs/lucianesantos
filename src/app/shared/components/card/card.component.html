@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="container">
+    <img class="img" [src]="cardProps.image" [alt]="cardProps.title" />
+    <div class="info">
+      <h3>{{ cardProps.title }}</h3>
+      <p class="description">
+        {{ cardProps.description }}
+      </p>
+      <div class="button-container">
+        <app-button
+          class="button"
+          [buttonProps]="cardProps.buttonProps.primary"
+        ></app-button>
+        <app-button
+          class="button"
+          [buttonProps]="cardProps.buttonProps.secondary"
+        ></app-button>
+      </div>
+    </div>
+  </div>
+</div>
