@@ -1,0 +1,17 @@
+@use "../../../assets/styles/base" as *;
+
+.main-container {
+  display: grid;
+  gap: 1.2rem;
+
+  .section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30.8rem, 1fr));
+    gap: 1.6rem;
+    width: 100%;
+
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+  }
+}

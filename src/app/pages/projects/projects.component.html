@@ -2,7 +2,14 @@
   <div class="title-container">
     <app-title
       title="Projetos"
-      suffixSubtitle="Principais desenvolvimentos"
+      [suffixSubtitle]="isMDbreakPoint ? '' : 'Principais desenvolvimentos'"
     ></app-title>
   </div>
+
+  <section class="section">
+    @for (card of cardProps; track $index) {
+      <app-card class="card" [cardProps]="card"></app-card>
+      <!-- TODO: ADICIONAR VER MAIS PROJETOS BUTTON  -->
+    }
+  </section>
 </div>
