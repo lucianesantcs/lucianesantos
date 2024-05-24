@@ -2,74 +2,74 @@ import { ICardProps } from '../../shared/components/card/card.interface';
 
 export const CARD_PROPS: ICardProps[] = [
   {
-    title: 'get coffee',
+    title: 'site profissional',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    image: 'assets/images/projects.jpg',
+      'Versão atual do site pessoal desenvolvido com Angular 17+',
+    image: 'assets/images/projects/site.png',
     buttonProps: {
       primary: {
-        overlineLabel: 'visit github',
+        overlineLabel: 'código',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://github.com/lucianesantcs/site-pessoal',
       },
       secondary: {
-        overlineLabel: 'visit figma',
+        overlineLabel: 'layout',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://www.figma.com/design/sK8Rcd2lf0WDyLe2HDHQ4m/pessoal-%2F-site?node-id=0-1',
       },
     },
   },
   {
-    title: 'get coffee',
+    title: 'blog-cards',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    image: 'assets/images/projects.jpg',
+      'Blog preview Card com filtro por input, desenvolvido com typeScript e sass',
+    image: 'assets/images/projects/blog-cards.png',
     buttonProps: {
       primary: {
-        overlineLabel: 'visit github',
+        overlineLabel: 'código',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://github.com/lucianesantcs/blog-cards',
       },
       secondary: {
-        overlineLabel: 'visit figma',
+        overlineLabel: 'pré-visualização',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://lucianesantcs.github.io/blog-cards/',
       },
     },
   },
   {
-    title: 'get coffee',
+    title: 'sing up modal',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    image: 'assets/images/projects.jpg',
+      'Design de um modal cadastrar newsletter de uma livraria online',
+    image: 'assets/images/projects/online-library.png',
     buttonProps: {
       primary: {
-        overlineLabel: 'visit github',
+        overlineLabel: 'pré-visualização',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://dribbble.com/shots/14189122-Online-Library-Modal',
       },
       secondary: {
-        overlineLabel: 'visit figma',
+        overlineLabel: 'layout',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://www.figma.com/file/CGZvEtvbSiMTJ3wlJA41wR/online-library-modal',
       },
     },
   },
   {
-    title: 'get coffee',
+    title: 'countdown app',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    image: 'assets/images/projects.jpg',
+      'App de Countdown desenvolvido com vanilla javascript',
+    image: 'assets/images/projects/counter.png',
     buttonProps: {
       primary: {
-        overlineLabel: 'visit github',
+        overlineLabel: 'código',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://github.com/lucianesantcs/contador',
       },
       secondary: {
-        overlineLabel: 'visit figma',
+        overlineLabel: 'pré-visualização',
         isHref: true,
-        href: 'https://github.com/lucianesantcs',
+        href: 'https://lucianesantcs.github.io/contador/',
       },
     },
   },
