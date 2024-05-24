@@ -6,6 +6,7 @@
   padding: 0.8rem;
   background-color: $surface-light;
   width: 100%;
+  min-height: 37.6rem;
   box-shadow: $box-shadow-right-bottom;
   border: 1px solid $border-primary;
   border-radius: 0.4rem;
@@ -20,7 +21,9 @@
       background-color: black;
       border-radius: 0.2rem;
       color: $surface-primary;
-      min-height: 19.2rem;
+      height: 22rem;
+      min-height: 22rem;
+      object-fit: cover;
     }
 
     .info {
@@ -40,6 +43,7 @@
       .button-container {
         display: flex;
         gap: 1.2rem;
+        flex-wrap: wrap;
 
         @include sm {
           .button {
