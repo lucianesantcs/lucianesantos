@@ -6,6 +6,15 @@
       <p class="description">
         {{ cardProps.description }}
       </p>
+
+      @if (cardProps.tags) {
+        <ul class="tags">
+          @for (tag of cardProps.tags; track $index) {
+            <li class="tag">{{ tag }}</li>
+          }
+        </ul>
+      }
+
       <div class="button-container">
         <app-button
           class="button"

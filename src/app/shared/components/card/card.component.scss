@@ -38,6 +38,19 @@
         @include subtitle-3;
       }
 
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 1rem;
+
+        .tag {
+          @include overline-bold-small;
+
+          list-style: none;
+          color: $subtitle-primary;
+        }
+      }
+
       .button-container {
         display: flex;
         gap: 1.2rem;
