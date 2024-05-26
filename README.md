@@ -1,4 +1,4 @@
-![image](https://github.com/lucianesantcs/site-pessoal/assets/52360898/a979977b-f7f7-4957-8fe9-82835edd8187)
+![image](https://raw.githubusercontent.com/lucianesantcs/site-pessoal/main/assets/preview.png)
 
 Redesign para Site Pessoal da versão 1 (portfólio) - [Código fonte](https://github.com/lucianesantcs/portfolio/tree/master), feito em 2021.
 
