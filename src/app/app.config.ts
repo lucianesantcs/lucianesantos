@@ -12,6 +12,7 @@ import {
   Menu,
   Moon,
   MoveRight,
+  MoveLeft,
   Sun,
   Dribbble,
   Mail,
@@ -21,6 +22,7 @@ import {
 
 export const importedLucideIcons = {
   MoveRight,
+  MoveLeft,
   ChevronDown,
   ChevronUp,
   Moon,

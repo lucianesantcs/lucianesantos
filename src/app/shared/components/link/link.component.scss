@@ -10,4 +10,8 @@
     color: $navigation-primary-active;
     font-weight: $font-weight-700;
   }
+
+  &.default-18 {
+    @include link-default-18;
+  }
 }

@@ -3,9 +3,14 @@
   (keypress)="onSelect(link)"
   tabindex="0"
   class="link"
+  [class.default-18]="link.default18Font"
   [class.active]="link.active"
   [attr.aria-label]="link.name"
   [class.active]="link.active"
 >
   {{ link.name }}
+
+  @if (showIcon && iconProps && iconProps.iconName) {
+    <app-icon [name]="iconProps.iconName" />
+  }
 </a>

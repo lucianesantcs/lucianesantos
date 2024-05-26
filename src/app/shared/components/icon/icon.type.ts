@@ -1,5 +1,6 @@
 export type IconType =
   | 'MoveRight'
+  | 'MoveLeft'
   | 'ChevronDown'
   | 'ChevronUp'
   | 'Moon'
