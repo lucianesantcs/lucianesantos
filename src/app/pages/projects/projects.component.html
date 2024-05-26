@@ -2,14 +2,23 @@
   <div class="title-container">
     <app-title
       title="Projetos"
-      [suffixSubtitle]="isMDbreakPoint ? '' : 'Principais desenvolvimentos'"
+      [suffixSubtitle]="isMDbreakPoint ? '' : subTitle"
     ></app-title>
   </div>
 
   <section class="section">
-    @for (card of cardProps; track $index) {
+    @for (card of projects; track $index) {
       <app-card class="card" [cardProps]="card"></app-card>
-      <!-- TODO: ADICIONAR VER MAIS PROJETOS BUTTON  -->
     }
+
+    <div class="card">
+      <app-link
+        class="link"
+        [link]="linkOptions.link"
+        [showIcon]="true"
+        [iconProps]="linkOptions.iconProps"
+        (selectedLink)="changeProjectType(linkOptions.changeProjectType)"
+      ></app-link>
+    </div>
   </section>
 </div>

@@ -13,5 +13,15 @@
     @include sm {
       grid-template-columns: 1fr;
     }
+
+    .card {
+      display: flex;
+      justify-content: flex-start;
+
+      .link {
+        padding: 5.4rem;
+        align-self: center;
+      }
+    }
   }
 }
