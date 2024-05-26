@@ -29,9 +29,9 @@
     padding: 1.6rem 8rem;
     margin: 0 auto;
     height: 100%;
-  }
 
-  @include breakpoint($bp: 850px) {
-    padding: 0 2.4rem;
+    @include breakpoint($bp: 850px) {
+      padding: 0 2.4rem;
+    }
   }
 }

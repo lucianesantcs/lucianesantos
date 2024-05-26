@@ -20,10 +20,13 @@
           class="button"
           [buttonProps]="cardProps.buttonProps.primary"
         ></app-button>
-        <app-button
-          class="button"
-          [buttonProps]="cardProps.buttonProps.secondary"
-        ></app-button>
+
+        @if (cardProps.buttonProps.secondary) {
+          <app-button
+            class="button"
+            [buttonProps]="cardProps.buttonProps.secondary"
+          ></app-button>
+        }
       </div>
     </div>
   </div>
