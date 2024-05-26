@@ -4,8 +4,9 @@ export const CARD_PROPS: ICardProps[] = [
   {
     title: 'site profissional',
     description:
-      'Versão atual do site pessoal desenvolvido com Angular 17+',
+      'Versão atual do site pessoal desenvolvido com Angular 17+, design criado utilizando Figma',
     image: 'assets/images/projects/site.png',
+    tags : ['#angular', '#typescript','#sass', '#rxjs', 'figma', '#pessoal'],
     buttonProps: {
       primary: {
         overlineLabel: 'código',
@@ -24,6 +25,7 @@ export const CARD_PROPS: ICardProps[] = [
     description:
       'Blog preview Card com filtro por input, desenvolvido com typeScript e sass',
     image: 'assets/images/projects/blog-cards.png',
+    tags : ['#vitejs', '#typescript','#sass', '#challenges', '#pessoal'],
     buttonProps: {
       primary: {
         overlineLabel: 'código',
@@ -42,6 +44,7 @@ export const CARD_PROPS: ICardProps[] = [
     description:
       'Design de um modal cadastrar newsletter de uma livraria online',
     image: 'assets/images/projects/online-library.png',
+    tags : ['#figma', '#design', '#pessoal'],
     buttonProps: {
       primary: {
         overlineLabel: 'pré-visualização',
@@ -60,6 +63,7 @@ export const CARD_PROPS: ICardProps[] = [
     description:
       'App de Countdown desenvolvido com vanilla javascript',
     image: 'assets/images/projects/counter.png',
+    tags : ['#flexbox', '#javascript', '#font-end', '#pessoal', '#challenges'],
     buttonProps: {
       primary: {
         overlineLabel: 'código',
