@@ -7,7 +7,15 @@ export const CARD_PROPS: IProjects = {
       description:
         'Versão atual do site pessoal desenvolvido com Angular 17+, design criado utilizando Figma',
       image: 'assets/images/projects/site.png',
-      tags: ['#angular', '#typescript', '#sass', '#rxjs', 'figma', '#pessoal'],
+      tags: [
+        '#angular',
+        '#typescript',
+        '#sass',
+        '#rxjs',
+        'figma',
+        '#pessoal',
+        '#font-end',
+      ],
       buttonProps: {
         primary: {
           overlineLabel: 'código',
@@ -86,7 +94,14 @@ export const CARD_PROPS: IProjects = {
       description:
         'Blog preview Card com filtro por input, desenvolvido com typeScript e sass',
       image: 'assets/images/projects/blog-cards.png',
-      tags: ['#vitejs', '#typescript', '#sass', '#challenges', '#pessoal'],
+      tags: [
+        '#vitejs',
+        '#typescript',
+        '#sass',
+        '#challenges',
+        '#pessoal',
+        '#font-end',
+      ],
       buttonProps: {
         primary: {
           overlineLabel: 'código',
@@ -185,6 +200,48 @@ export const CARD_PROPS: IProjects = {
           overlineLabel: 'código',
           isHref: true,
           href: 'https://github.com/lucianesantcs/doe/',
+        },
+      },
+    },
+    {
+      title: 'techno-store',
+      description:
+        'Aplicação que simula uma loja de eletrônicos desenvolvida com VueJs 2 no curso da Origamid',
+      image: 'assets/images/projects/techno-store.png',
+      tags: [
+        '#vuejs',
+        '#javascript',
+        '#html',
+        '#css',
+        '#font-end',
+        '#fakeapi',
+      ],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'código',
+          isHref: true,
+          href: 'https://github.com/lucianesantcs/origamid-vue/tree/master/techno-store',
+        },
+      },
+    },
+    {
+      title: 'techno-cursos',
+      description:
+        'Aplicação de cursos desenvolvida com estrutura completa do VueJs 2 no curso da Origamid',
+      image: 'assets/images/projects/techno-cursos.png',
+      tags: [
+        '#vuejs',
+        '#javascript',
+        '#html',
+        '#css',
+        '#font-end',
+        '#fakeapi',
+      ],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'código',
+          isHref: true,
+          href: 'https://github.com/lucianesantcs/origamid-vue/tree/master/techno-cursos',
         },
       },
     },
