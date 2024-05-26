@@ -7,6 +7,6 @@ export interface ICardProps {
   tags: string[];
   buttonProps: {
     primary: IButton;
-    secondary: IButton;
+    secondary?: IButton;
   };
 }
