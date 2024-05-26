@@ -1,11 +1,35 @@
-@use "../../../../../assets/styles/base/mixins" as *;
+@use "../../../../../assets/styles/base" as *;
 
 .main {
-  max-width: 144rem;
+  width: 100%;
   height: calc(100% - 16rem);
-  padding: 1.6rem 8rem;
-  margin: 0 auto;
   overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    border: 0;
+    background-color: $content-primary;
+    border-radius: 1rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 0;
+    background-color: $navigation-primary-hover;
+    border-radius: 1rem;
+    min-height: 2.4rem;
+    min-width: 2.4rem;
+  }
+
+  .section {
+    max-width: 144rem;
+    padding: 1.6rem 8rem;
+    margin: 0 auto;
+    height: 100%;
+  }
 
   @include breakpoint($bp: 850px) {
     padding: 0 2.4rem;
