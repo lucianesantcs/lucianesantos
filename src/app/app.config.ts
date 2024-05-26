@@ -1,6 +1,6 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { LayoutModule } from '@angular/cdk/layout';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withViewTransitions } from '@angular/router';
 
 import { routes } from './app.routes';
 import {
@@ -40,10 +40,11 @@ const MODULES = [LayoutModule];
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
+    provideRouter(routes, withViewTransitions()),
     importProvidersFrom(
       ...MODULES,
       LucideAngularModule.pick(importedLucideIcons),
+      Animation
     ),
   ],
 };

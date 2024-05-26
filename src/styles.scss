@@ -26,3 +26,36 @@ svg,
 lucide-icon {
   display: flex;
 }
+
+/* Add application styles & imports to this file! */
+@keyframes entrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes exit {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+}
+
+::view-transition-old(root) {
+  animation: exit 500ms ease 0s 1 normal forwards;
+}
+
+::view-transition-new(root) {
+  animation: entrance 500ms ease 0s 1 normal forwards;
+}
