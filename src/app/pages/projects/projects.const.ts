@@ -50,12 +50,7 @@ export const CARD_PROPS: IProjects = {
         primary: {
           overlineLabel: 'código',
           isHref: true,
-          href: 'https://github.com/lucianesantcs/site-pessoal',
-        },
-        secondary: {
-          overlineLabel: 'layout',
-          isHref: true,
-          href: 'https://www.figma.com/design/sK8Rcd2lf0WDyLe2HDHQ4m/pessoal-%2F-site?node-id=0-1',
+          href: 'https://github.com/lucianesantcs/proffy/',
         },
       },
     },
@@ -80,12 +75,7 @@ export const CARD_PROPS: IProjects = {
         primary: {
           overlineLabel: 'código',
           isHref: true,
-          href: 'https://github.com/lucianesantcs/site-pessoal',
-        },
-        secondary: {
-          overlineLabel: 'layout',
-          isHref: true,
-          href: 'https://www.figma.com/design/sK8Rcd2lf0WDyLe2HDHQ4m/pessoal-%2F-site?node-id=0-1',
+          href: 'https://github.com/lucianesantcs/be-the-hero/',
         },
       },
     },
@@ -172,12 +162,7 @@ export const CARD_PROPS: IProjects = {
         primary: {
           overlineLabel: 'código',
           isHref: true,
-          href: 'https://github.com/lucianesantcs/site-pessoal',
-        },
-        secondary: {
-          overlineLabel: 'layout',
-          isHref: true,
-          href: 'https://www.figma.com/design/sK8Rcd2lf0WDyLe2HDHQ4m/pessoal-%2F-site?node-id=0-1',
+          href: 'https://github.com/lucianesantcs/animais-fantasticos',
         },
       },
     },
@@ -208,14 +193,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Aplicação que simula uma loja de eletrônicos desenvolvida com VueJs 2 no curso da Origamid',
       image: 'assets/images/projects/techno-store.png',
-      tags: [
-        '#vuejs',
-        '#javascript',
-        '#html',
-        '#css',
-        '#font-end',
-        '#fakeapi',
-      ],
+      tags: ['#vuejs', '#javascript', '#html', '#css', '#font-end', '#fakeapi'],
       buttonProps: {
         primary: {
           overlineLabel: 'código',
@@ -229,19 +207,26 @@ export const CARD_PROPS: IProjects = {
       description:
         'Aplicação de cursos desenvolvida com estrutura completa do VueJs 2 no curso da Origamid',
       image: 'assets/images/projects/techno-cursos.png',
-      tags: [
-        '#vuejs',
-        '#javascript',
-        '#html',
-        '#css',
-        '#font-end',
-        '#fakeapi',
-      ],
+      tags: ['#vuejs', '#javascript', '#html', '#css', '#font-end', '#fakeapi'],
       buttonProps: {
         primary: {
           overlineLabel: 'código',
           isHref: true,
           href: 'https://github.com/lucianesantcs/origamid-vue/tree/master/techno-cursos',
+        },
+      },
+    },
+    {
+      title: 'portfólio v1',
+      description:
+        'Portfólio criado em 2021 desenvolvido em ReactJS com css module',
+      image: 'assets/images/projects/portfolio.png',
+      tags: ['#reactjs', '#responsive-design', '#css-modules', '#font-end'],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'código',
+          isHref: true,
+          href: 'https://github.com/lucianesantcs/portfolio',
         },
       },
     },
