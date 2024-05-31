@@ -55,31 +55,6 @@ export const CARD_PROPS: IProjects = {
       },
     },
     {
-      title: 'be the hero',
-      description:
-        'Aplicação que conecta ONGs a pessoas que estão dispostas a ajudá-los monetariamente nos casos',
-      image: 'assets/images/projects/be-the-hero.png',
-      tags: [
-        '#javascript',
-        '#nodejs',
-        '#reactjs',
-        '#font-end',
-        ' #back-end',
-        '#sqlite',
-        '#react-native',
-        ' #express',
-        '#contributed',
-        ' #responsive',
-      ],
-      buttonProps: {
-        primary: {
-          overlineLabel: 'código',
-          isHref: true,
-          href: 'https://github.com/lucianesantcs/be-the-hero/',
-        },
-      },
-    },
-    {
       title: 'blog-cards',
       description:
         'Blog preview Card com filtro por input, desenvolvido com typeScript e sass',
@@ -106,6 +81,44 @@ export const CARD_PROPS: IProjects = {
       },
     },
     {
+      title: 'buy-it',
+      description:
+        'Design da página inicial de uma loja de variedade de produtos online',
+      image: 'assets/images/projects/buy-it.png',
+      tags: ['#figma', '#design', '#pessoal'],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'pré-visualização',
+          isHref: true,
+          href: 'https://dribbble.com/shots/24272916-buy-it-home-page',
+        },
+        secondary: {
+          overlineLabel: 'layout',
+          isHref: true,
+          href: 'https://www.figma.com/design/AfUQbKpjFLUqoadJxxUU2y/pessoal-%2F-designs?node-id=1-43',
+        },
+      },
+    },
+    {
+      title: 'dekan landing page',
+      description:
+        'Design de uma landing page completa desenhada no figma',
+      image: 'assets/images/projects/dekan-landing-page.png',
+      tags: ['#figma', '#design', '#pessoal'],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'pré-visualização',
+          isHref: true,
+          href: 'https://dribbble.com/shots/24272930-dekan-landing-page',
+        },
+        secondary: {
+          overlineLabel: 'layout',
+          isHref: true,
+          href: 'https://www.figma.com/design/AfUQbKpjFLUqoadJxxUU2y/pessoal-%2F-designs?node-id=5-39',
+        },
+      },
+    },
+    {
       title: 'sing up modal',
       description:
         'Design de um modal cadastrar newsletter de uma livraria online',
@@ -120,7 +133,32 @@ export const CARD_PROPS: IProjects = {
         secondary: {
           overlineLabel: 'layout',
           isHref: true,
-          href: 'https://www.figma.com/file/CGZvEtvbSiMTJ3wlJA41wR/online-library-modal',
+          href: 'https://www.figma.com/design/AfUQbKpjFLUqoadJxxUU2y/pessoal-%2F-designs?node-id=7-759',
+        },
+      },
+    },
+    {
+      title: 'be the hero',
+      description:
+        'Aplicação que conecta ONGs a pessoas que estão dispostas a ajudá-los monetariamente nos casos',
+      image: 'assets/images/projects/be-the-hero.png',
+      tags: [
+        '#javascript',
+        '#nodejs',
+        '#reactjs',
+        '#font-end',
+        ' #back-end',
+        '#sqlite',
+        '#react-native',
+        ' #express',
+        '#contributed',
+        ' #responsive',
+      ],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'código',
+          isHref: true,
+          href: 'https://github.com/lucianesantcs/be-the-hero/',
         },
       },
     },
@@ -144,6 +182,39 @@ export const CARD_PROPS: IProjects = {
     },
   ],
   others: [
+    {
+      title: 'portfólio (2021)',
+      description:
+        'Portfólio criado em 2021 desenvolvido em ReactJS com css module',
+      image: 'assets/images/projects/portfolio.png',
+      tags: ['#reactjs', '#responsive-design', '#css-modules', '#font-end'],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'código',
+          isHref: true,
+          href: 'https://github.com/lucianesantcs/portfolio',
+        },
+      },
+    },
+    {
+      title: 'credit card checkout',
+      description:
+        'Design de um checkout de pagamento com cartão de crédito',
+      image: 'assets/images/projects/credit-card-checkout.png',
+      tags: ['#figma', '#design', '#pessoal'],
+      buttonProps: {
+        primary: {
+          overlineLabel: 'pré-visualização',
+          isHref: true,
+          href: 'https://dribbble.com/shots/14206123-Credit-Card-Checkout',
+        },
+        secondary: {
+          overlineLabel: 'layout',
+          isHref: true,
+          href: 'https://www.figma.com/design/AfUQbKpjFLUqoadJxxUU2y/pessoal-%2F-designs?node-id=7-784',
+        },
+      },
+    },
     {
       title: 'animais fantásticos',
       description:
@@ -213,20 +284,6 @@ export const CARD_PROPS: IProjects = {
           overlineLabel: 'código',
           isHref: true,
           href: 'https://github.com/lucianesantcs/origamid-vue/tree/master/techno-cursos',
-        },
-      },
-    },
-    {
-      title: 'portfólio v1',
-      description:
-        'Portfólio criado em 2021 desenvolvido em ReactJS com css module',
-      image: 'assets/images/projects/portfolio.png',
-      tags: ['#reactjs', '#responsive-design', '#css-modules', '#font-end'],
-      buttonProps: {
-        primary: {
-          overlineLabel: 'código',
-          isHref: true,
-          href: 'https://github.com/lucianesantcs/portfolio',
         },
       },
     },
