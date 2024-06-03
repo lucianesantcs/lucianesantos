@@ -17,14 +17,6 @@
     gap: 0.8rem;
     height: 100%;
 
-    .img {
-      width: 100%;
-      background-color: black;
-      border-radius: 0.2rem;
-      color: $surface-primary;
-      object-fit: cover;
-    }
-
     .info {
       display: flex;
       flex-direction: column;

@@ -1,6 +1,6 @@
 <div class="card">
   <div class="container">
-    <img class="img" [src]="cardProps.image" [alt]="cardProps.title" />
+    <app-image-dialog [imageProps]="cardProps" />
     <div class="info">
       <h3>{{ cardProps.title }}</h3>
       <p class="description">
