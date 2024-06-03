@@ -1,0 +1,27 @@
+<img
+  tabindex="0"
+  class="img"
+  [src]="imageProps.image"
+  [alt]="imageProps.title"
+  (keyup.enter)="openFullImage(imageProps.fullImage)"
+  (click)="openFullImage(imageProps.fullImage)"
+/>
+
+<ng-template #fullImageRef>
+  <div class="img-container">
+    <div class="close-icon">
+      <app-icon
+        name="X"
+        class="icon"
+        color="#1a1a1a"
+        (click)="closeFullImage()"
+      />
+    </div>
+    <img
+      tabindex="0"
+      class="full-img"
+      [src]="fullImage"
+      [alt]="imageProps.title"
+    />
+  </div>
+</ng-template>

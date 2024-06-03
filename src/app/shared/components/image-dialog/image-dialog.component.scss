@@ -1,0 +1,32 @@
+@use "../../../../assets/styles/base" as *;
+
+.img {
+  width: 100%;
+  background-color: $navigation-primary;
+  border-radius: 0.2rem;
+  color: $surface-primary;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.img-container {
+  padding: 2rem;
+  background-color: $color-neutral-30;
+  border-radius: 0.8rem;
+
+  .close-icon {
+    padding: 0 0 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+      cursor: pointer;
+    }
+  }
+
+  .full-img {
+    width: 100%;
+    border-radius: 0.4rem;
+    box-shadow: $box-shadow-right-bottom;
+  }
+}
