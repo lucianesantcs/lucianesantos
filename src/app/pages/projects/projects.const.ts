@@ -7,6 +7,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Versão atual do site pessoal desenvolvido com Angular 17+, design criado utilizando Figma',
       image: 'assets/images/projects/site.png',
+      fullImage: 'assets/images/projects/site-full.png',
       tags: [
         '#angular',
         '#typescript',
@@ -33,6 +34,7 @@ export const CARD_PROPS: IProjects = {
       title: 'proffy',
       description: 'Aplicação que conecta alunos e professores',
       image: 'assets/images/projects/proffy.png',
+      fullImage: 'assets/images/projects/proffy-full.png',
       tags: [
         '#javascript',
         '#nodejs',
@@ -59,6 +61,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Blog preview Card com filtro por input, desenvolvido com typeScript e sass',
       image: 'assets/images/projects/blog-cards.png',
+      fullImage: 'assets/images/projects/blog-cards-full.png',
       tags: [
         '#vitejs',
         '#typescript',
@@ -85,6 +88,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Design da página inicial de uma loja de variedade de produtos online',
       image: 'assets/images/projects/buy-it.png',
+      fullImage: 'assets/images/projects/buy-it-full.png',
       tags: ['#figma', '#design', '#pessoal'],
       buttonProps: {
         primary: {
@@ -101,9 +105,9 @@ export const CARD_PROPS: IProjects = {
     },
     {
       title: 'dekan landing page',
-      description:
-        'Design de uma landing page completa desenhada no figma',
+      description: 'Design de uma landing page completa desenhada no figma',
       image: 'assets/images/projects/dekan-landing-page.png',
+      fullImage: 'assets/images/projects/dekan-landing-page-full.png',
       tags: ['#figma', '#design', '#pessoal'],
       buttonProps: {
         primary: {
@@ -123,6 +127,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Design de um modal cadastrar newsletter de uma livraria online',
       image: 'assets/images/projects/online-library.png',
+      fullImage: 'assets/images/projects/online-library-full.png',
       tags: ['#figma', '#design', '#pessoal'],
       buttonProps: {
         primary: {
@@ -142,6 +147,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Aplicação que conecta ONGs a pessoas que estão dispostas a ajudá-los monetariamente nos casos',
       image: 'assets/images/projects/be-the-hero.png',
+      fullImage: 'assets/images/projects/be-the-hero-full.png',
       tags: [
         '#javascript',
         '#nodejs',
@@ -166,6 +172,7 @@ export const CARD_PROPS: IProjects = {
       title: 'countdown app',
       description: 'App de Countdown desenvolvido com vanilla javascript',
       image: 'assets/images/projects/counter.png',
+      fullImage: 'assets/images/projects/counter-full.png',
       tags: ['#flexbox', '#javascript', '#font-end', '#pessoal', '#challenges'],
       buttonProps: {
         primary: {
@@ -187,6 +194,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Portfólio criado em 2021 desenvolvido em ReactJS com css module',
       image: 'assets/images/projects/portfolio.png',
+      fullImage: 'assets/images/projects/portfolio-full.png',
       tags: ['#reactjs', '#responsive-design', '#css-modules', '#font-end'],
       buttonProps: {
         primary: {
@@ -198,9 +206,9 @@ export const CARD_PROPS: IProjects = {
     },
     {
       title: 'credit card checkout',
-      description:
-        'Design de um checkout de pagamento com cartão de crédito',
+      description: 'Design de um checkout de pagamento com cartão de crédito',
       image: 'assets/images/projects/credit-card-checkout.png',
+      fullImage: 'assets/images/projects/credit-card-checkout-full.png',
       tags: ['#figma', '#design', '#pessoal'],
       buttonProps: {
         primary: {
@@ -220,6 +228,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Site desenvolvido no curso de JavaScript ES6+ completo pela Origamid',
       image: 'assets/images/projects/animais-fantasticos.png',
+      fullImage: 'assets/images/projects/animais-fantasticos-full.png',
       tags: [
         '#javascript',
         '#nodejs',
@@ -242,6 +251,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Sistema de cadastro para doadores de sangue, desenvolvido na Maratona Dev da Rocketseat',
       image: 'assets/images/projects/doe.png',
+      fullImage: 'assets/images/projects/doe-full.png',
       tags: [
         '#javascript',
         '#nodejs',
@@ -264,6 +274,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Aplicação que simula uma loja de eletrônicos desenvolvida com VueJs 2 no curso da Origamid',
       image: 'assets/images/projects/techno-store.png',
+      fullImage: 'assets/images/projects/techno-store-full.png',
       tags: ['#vuejs', '#javascript', '#html', '#css', '#font-end', '#fakeapi'],
       buttonProps: {
         primary: {
@@ -278,6 +289,7 @@ export const CARD_PROPS: IProjects = {
       description:
         'Aplicação de cursos desenvolvida com estrutura completa do VueJs 2 no curso da Origamid',
       image: 'assets/images/projects/techno-cursos.png',
+      fullImage: 'assets/images/projects/techno-cursos-full.png',
       tags: ['#vuejs', '#javascript', '#html', '#css', '#font-end', '#fakeapi'],
       buttonProps: {
         primary: {
