@@ -22,4 +22,8 @@ export class ButtonComponent {
       iconProps: this.iconProps,
     });
   }
+
+  protected getButtonStyle(): string {
+    return this.buttonProps?.style || '';
+  }
 }

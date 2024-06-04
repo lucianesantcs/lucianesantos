@@ -1,4 +1,4 @@
-import { ISocialIcons } from './about.interface';
+import { ICvButtons, ISocialIcons } from './about.interface';
 
 export const SOCIAL_ICONS: ISocialIcons[] = [
   {
@@ -29,10 +29,24 @@ export const SOCIAL_ICONS: ISocialIcons[] = [
     buttonProps: {
       showIcon: true,
       isHref: true,
-      href:'mailto:lucianesantcs@gmail.com',
+      href: 'mailto:lucianesantcs@gmail.com',
     },
     iconProps: {
       iconName: 'Mail',
     },
   },
 ];
+
+export const CV_BUTTONS: ICvButtons = {
+  buttonProps: {
+    showIcon: true,
+    showLabel: true,
+    label: 'Download CV',
+    isHref: true,
+    href: 'assets/docs/curriculo-lucianesantos.pdf',
+    style: 'outline-default-32'
+  },
+  iconProps: {
+    iconName: 'Download',
+  },
+};

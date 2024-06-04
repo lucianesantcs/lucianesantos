@@ -3,6 +3,7 @@
     class="button"
     (click)="click($event)"
     [class.active]="buttonProps.isActive"
+    [ngClass]="getButtonStyle()"
   >
     <ng-container [ngTemplateOutlet]="buttonPropsRef"></ng-container>
   </button>
@@ -10,6 +11,7 @@
   <a
     class="button"
     [class.active]="buttonProps.isActive"
+    [ngClass]="getButtonStyle()"
     [href]="buttonProps.href"
     [target]="buttonProps.href"
   >

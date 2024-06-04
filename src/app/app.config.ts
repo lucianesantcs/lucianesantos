@@ -18,6 +18,7 @@ import {
   Mail,
   Languages,
   X,
+  Download,
 } from 'lucide-angular';
 
 export const importedLucideIcons = {
@@ -34,6 +35,7 @@ export const importedLucideIcons = {
   Languages,
   Menu,
   X,
+  Download,
 };
 
 const MODULES = [LayoutModule];
@@ -44,7 +46,7 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(
       ...MODULES,
       LucideAngularModule.pick(importedLucideIcons),
-      Animation
+      Animation,
     ),
   ],
 };

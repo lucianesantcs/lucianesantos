@@ -11,4 +11,5 @@ export type IconType =
   | 'Mail'
   | 'Languages'
   | 'Menu'
-  | 'X';
+  | 'X'
+  | 'Download';

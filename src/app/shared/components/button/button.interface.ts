@@ -9,6 +9,7 @@ export interface IButton {
   isActive?: boolean;
   isHref?: boolean;
   href?: string;
+  style?: string;
 }
 
 export interface IButtonEventProps {

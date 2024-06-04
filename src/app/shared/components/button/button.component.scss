@@ -10,6 +10,14 @@
     @include button-default-32($isActive: true);
   }
 
+  &.outline-default-32 {
+    @include button-outline-default-32;
+  }
+
+  &.outline-default-24 {
+    @include button-outline-default-24;
+  }
+
   > * {
     pointer-events: none;
   }

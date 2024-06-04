@@ -6,6 +6,11 @@ export interface ISocialIcons {
   iconProps: IIcon;
 }
 
+export interface ICvButtons {
+  buttonProps: IButton;
+  iconProps: IIcon;
+}
+
 export interface ISocialLinksMapper {
   Github: string;
   Linkedin: string;

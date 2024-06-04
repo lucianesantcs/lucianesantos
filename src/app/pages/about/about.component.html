@@ -18,6 +18,11 @@
       </p>
     </div>
     <div class="social-icons">
+      <app-button
+        [iconProps]="cvButton.iconProps"
+        [buttonProps]="cvButton.buttonProps"
+        (clickEvent)="socialIconRedirect($event)"
+      ></app-button>
       @for (icon of socialIcons; track $index) {
         <app-button
           [iconProps]="icon.iconProps"
