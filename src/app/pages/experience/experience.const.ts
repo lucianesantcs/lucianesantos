@@ -8,10 +8,9 @@ export const SECTIONS = [
       location: 'Rio de Janeiro, Brasil',
       time: 'Maio 2021 - atualmente',
     },
-    description: `Atuo no desenvolvimento de layouts a partir do Figma em HTML, SCSS, 
-    Typescript utilizando o framework Angular 15 e as melhores práticas da web. 
-    Faço manutenção de código Back-End em NodeJs + GraphQL, e com consumo de API's Rest 
-    com backend em .NET 6.0.`,
+    description: `Atuo no desenvolvimento e manutenção de layouts a partir do Figma, utilizando HTML, SCSS e Typescript com Angular 12+ e os princípios de design de software SOLID, DRY, KISS. 
+    Manutenção de código Back-End em NodeJs + GraphQL, e com consumo de API's Rest. 
+    Criação de testes automatizados E2E com Playwright em Typescript, seguindo o padrão Page Object Model.`,
     skills: {
       title: 'Skills e tecnologias',
       skills: [
@@ -31,6 +30,7 @@ export const SECTIONS = [
         'Module Federation',
         'Microfrontend com Angular',
         'Node.js',
+        'Playwright',
       ],
     },
   },
@@ -40,12 +40,11 @@ export const SECTIONS = [
     },
     jobInfo: {
       location: 'Belo Horizonte, Brasil',
-      time: '2017 ~ ',
+      time: '2014 ~ atualmente',
     },
-    description: `Durante sete+ anos tenho dedicado minha jornada profissional à programação 
-    como autodidata. Concentrei meus esforços no desenvolvimento Front-End, dominando HTML, 
-    CSS e JavaScript, além de frameworks como Angular e React. Meu interesse ao mundo da 
-    tecnologia se estende ao UI Design, utilizando o Figma para criar interfaces.`,
+    description: `Dedicação na jornada profissional em desenvolvimento web como autodidata.
+    Criação de projetos pessoais utilizando HTML, CSS e JavaScript, além de frameworks como Angular e React. 
+    Criação de interfaces utilizando o Figma.`,
     skills: {
       title: 'Skills e tecnologias',
       skills: [
