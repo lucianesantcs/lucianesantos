@@ -1,16 +1,16 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../shared/components/button/button.component';
+import { IButtonEventProps } from '../../shared/components/button/button.interface';
 import { IconComponent } from '../../shared/components/icon/icon.component';
 import { SubTitleComponent } from '../../shared/components/sub-title/sub-title.component';
 import { TitleComponent } from '../../shared/components/title/title.component';
+import { CV_BUTTONS, SOCIAL_ICONS } from './about.const';
 import {
   ICvButtons,
   ISocialIcons,
   ISocialLinksMapper,
 } from './about.interface';
-import { IButtonEventProps } from '../../shared/components/button/button.interface';
-import { CV_BUTTONS, SOCIAL_ICONS } from './about.const';
 
 @Component({
   selector: 'app-about',

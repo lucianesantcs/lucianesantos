@@ -25,14 +25,9 @@ button {
   padding: 0.8rem 1.2rem;
   background-color: $surface-primary;
 
-  @include breakpoint(
-    $bp: map-get($breakpoints, "md"),
-    $width-type: min-width
-  ) {
-    &:hover {
-      background-color: $surface-primary-inverted;
-      color: $content-primary-inverted;
-    }
+  &:hover {
+    background-color: $surface-primary-inverted;
+    color: $content-primary-inverted;
   }
 
   &:disabled {
@@ -50,15 +45,10 @@ button {
   border: 0.15rem solid $surface-primary;
   background-color: transparent;
 
-  @include breakpoint(
-    $bp: map-get($breakpoints, "md"),
-    $width-type: min-width
-  ) {
-    &:hover {
-      background-color: $surface-primary-inverted;
-      border: 0.15rem solid transparent;
-      color: $content-primary-inverted;
-    }
+  &:hover {
+    background-color: $surface-primary-inverted;
+    border: 0.15rem solid transparent;
+    color: $content-primary-inverted;
   }
 
   &:disabled {
@@ -69,14 +59,9 @@ button {
 }
 
 .button-link-default {
-  @include breakpoint(
-    $bp: map-get($breakpoints, "md"),
-    $width-type: min-width
-  ) {
-    &:hover {
-      background-color: transparent;
-      color: $content-primary-inverted;
-    }
+  &:hover {
+    background-color: transparent;
+    color: $content-primary-inverted;
   }
 
   &:disabled {

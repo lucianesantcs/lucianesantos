@@ -41,6 +41,15 @@
     .social-icons {
       display: flex;
       gap: 2.4rem;
+      flex-wrap: wrap;
+
+      @include sm {
+        .cv-button {
+          flex: 1 1 100%;
+        }
+
+        justify-content: center;
+      }
     }
   }
 
