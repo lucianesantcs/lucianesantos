@@ -1,5 +1,6 @@
 @if (!buttonProps.isHref) {
   <button
+    [name]="buttonProps.name"
     class="button"
     (click)="click($event)"
     [class.active]="buttonProps.isActive"
@@ -9,6 +10,7 @@
   </button>
 } @else {
   <a
+    [title]="buttonProps.name"
     class="button"
     [class.active]="buttonProps.isActive"
     [ngClass]="getButtonStyle()"

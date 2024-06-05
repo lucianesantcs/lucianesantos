@@ -22,13 +22,11 @@
         class="cv-button"
         [iconProps]="cvButton.iconProps"
         [buttonProps]="cvButton.buttonProps"
-        (clickEvent)="socialIconRedirect($event)"
       ></app-button>
       @for (icon of socialIcons; track $index) {
         <app-button
           [iconProps]="icon.iconProps"
           [buttonProps]="icon.buttonProps"
-          (clickEvent)="socialIconRedirect($event)"
         ></app-button>
       }
     </div>
