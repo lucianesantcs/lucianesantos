@@ -2,15 +2,32 @@
   cdkConnectedOverlay
   [cdkConnectedOverlayOrigin]="triggerOriginReference"
   [cdkConnectedOverlayOpen]="isDropdownOpen"
-  cdkConnectedOverlayWidth="42.4rem"
+  cdkConnectedOverlayWidth="calc(100% - 4.8rem)"
 >
   <ul class="dropdown">
-    @for (link of links; track link) {
-      <li class="dropdown-item">
-        <app-link (selectedLink)="onSelect($event)" [link]="link" class="link">
-          {{ link?.name }}
-        </app-link>
-      </li>
+    @if (links) {
+      @for (link of links; track link) {
+        <li class="dropdown-item">
+          <app-link
+            (selectedLink)="onSelect($event)"
+            [link]="link"
+            class="link"
+          >
+            {{ link?.name }}
+          </app-link>
+        </li>
+      }
+    }
+
+    @if (routerLinks) {
+      @for (link of routerLinks; track $index) {
+        <li class="dropdown-item">
+          <app-router-link
+            [routerLink]="link.routerLink"
+            [routerLinkLabel]="link.routerLinkLabel"
+          />
+        </li>
+      }
     }
   </ul>
 </ng-template>

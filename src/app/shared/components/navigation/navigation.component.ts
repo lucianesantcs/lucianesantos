@@ -22,6 +22,7 @@ import { IRouterLink } from '../router-link/router-link.interface';
 export class NavigationComponent {
   @Input({ required: true }) navLinks!: IRouterLink[];
   @Input() dropdownLinks!: ILink[];
+  @Input() dropdownRouterLinks!: IRouterLink[];
   @Output() filteredLinksEvent = new EventEmitter<ILink[]>();
 
   private breakPoints = inject(BreakpointsService);

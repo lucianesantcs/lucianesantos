@@ -17,6 +17,7 @@ import { IButtonEventProps } from '../button/button.interface';
 export class HeaderComponent {
   @Input({ required: true }) navLinks!: IRouterLink[];
   @Input() dropdownLinks!: ILink[];
+  @Input() dropdownRouterLinks!: IRouterLink[];
   @Input() toggleIcons!: IToggleIconProps[];
   @Output() toggleEvent = new EventEmitter<IButtonEventProps>();
 

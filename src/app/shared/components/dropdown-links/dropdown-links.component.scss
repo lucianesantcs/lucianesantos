@@ -5,17 +5,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  max-width: 42.4rem;
+  width: 100%;
   padding: 1.2rem;
   box-sizing: border-box;
   background-color: $color-neutral-30;
   border-radius: $border-radius-4;
   border: 1px solid $color-neutral-50;
   box-shadow: $box-shadow-bottom;
-
-  @include md {
-    max-width: 100%;
-    margin: 2.4rem 0 0 -2.5rem;
-    justify-content: center;
-  }
+  margin: 2.4rem 0 0 0;
+  justify-content: center;
 }
