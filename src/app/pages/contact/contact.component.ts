@@ -21,7 +21,7 @@ export class ContactComponent {
   protected isXLbreakPoint!: boolean;
 
   constructor() {
-    this.breakPoints.getBreakpoint(['md'])?.subscribe(({ md, xl }) => {
+    this.breakPoints.getBreakpoint(['xl'])?.subscribe(({ md, xl }) => {
       this.isMDbreakPoint = md;
       this.isXLbreakPoint = xl;
     });
