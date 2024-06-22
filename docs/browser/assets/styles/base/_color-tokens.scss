@@ -1,0 +1,20 @@
+@use "./color-variables" as *;
+
+$navigation-primary: $color-neutral-950;
+$navigation-primary-hover: $color-primary-500;
+$navigation-primary-active: $color-neutral-400;
+
+$surface-primary: $color-primary-500;
+$content-primary: $color-neutral-500;
+
+$surface-primary-inverted: $color-neutral-500;
+$content-primary-inverted: $color-primary-500;
+
+$surface-disabled: $color-neutral-50;
+$content-disabled: $color-neutral-600;
+
+$surface-light: $color-neutral-30;
+
+$border-primary: $color-neutral-200;
+
+$subtitle-primary: $color-neutral-400;

@@ -1,0 +1,120 @@
+@use "../base" as *;
+
+button {
+  font: inherit;
+  cursor: pointer;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  background-color: transparent;
+  color: inherit;
+  line-height: normal;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: ease-in-out 0.3s;
+  border-radius: $border-radius-4;
+}
+
+.button-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  background-color: $surface-primary;
+
+  &:hover {
+    background-color: $surface-primary-inverted;
+    color: $content-primary-inverted;
+  }
+
+  &:disabled {
+    background-color: $surface-disabled;
+    color: $content-disabled;
+    cursor: not-allowed;
+  }
+}
+
+.button-outline-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  border: 0.15rem solid $surface-primary;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $surface-primary-inverted;
+    border: 0.15rem solid transparent;
+    color: $content-primary-inverted;
+  }
+
+  &:disabled {
+    background-color: $surface-disabled;
+    color: $content-disabled;
+    cursor: not-allowed;
+  }
+}
+
+.button-link-default {
+  &:hover {
+    background-color: transparent;
+    color: $content-primary-inverted;
+  }
+
+  &:disabled {
+    background-color: $surface-disabled;
+    color: $content-disabled;
+    cursor: not-allowed;
+  }
+}
+
+@mixin button-default-32($isActive: false) {
+  @include button;
+  @extend .button-default;
+
+  gap: 0.8rem;
+
+  @if $isActive {
+    background-color: $surface-primary-inverted;
+    color: $content-primary-inverted;
+  }
+}
+
+@mixin button-outline-default-32($isActive: false) {
+  @include button;
+  @extend .button-outline-default;
+
+  gap: 0.8rem;
+
+  @if $isActive {
+    background-color: $surface-primary-inverted;
+    color: $content-primary-inverted;
+  }
+}
+
+@mixin button-default-24 {
+  @include overline-bold;
+  @extend .button-default;
+
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+}
+
+@mixin button-outline-default-24 {
+  @include overline-bold;
+  @extend .button-outline-default;
+
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+}
+
+@mixin button-link-default {
+  @include button-link;
+  @extend .button-link-default;
+
+  gap: 0.4rem;
+  padding: 0.2rem 0.4rem;
+}

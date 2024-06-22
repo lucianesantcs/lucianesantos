@@ -1,0 +1,35 @@
+@use "../base/typography" as *;
+@use "../base/color-tokens" as *;
+
+a {
+  text-decoration: none;
+  color: $navigation-primary;
+  transition: ease-in-out 0.3s;
+}
+
+a:hover {
+  color: $navigation-primary-hover;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin active {
+  color: $navigation-primary-active;
+}
+
+@mixin link-default-12 {
+  @include body-3;
+  @extend .flex;
+
+  gap: 0.4rem;
+}
+
+@mixin link-default-18 {
+  @include heading-6;
+  @extend .flex;
+
+  gap: 0.8rem;
+}
