@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-gp": "ng build --output-path docs --base-href /site-pessoal/",
+    "build-gp": "ng build --output-path docs --base-href /docs/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
