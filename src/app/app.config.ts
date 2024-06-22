@@ -1,25 +1,25 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { LayoutModule } from '@angular/cdk/layout';
-import { provideRouter, withViewTransitions } from '@angular/router';
+import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { provideRouter, withHashLocation, withViewTransitions } from '@angular/router';
 
-import { routes } from './app.routes';
 import {
   ChevronDown,
   ChevronUp,
+  Download,
+  Dribbble,
   Github,
+  Languages,
   Linkedin,
   LucideAngularModule,
+  Mail,
   Menu,
   Moon,
-  MoveRight,
   MoveLeft,
+  MoveRight,
   Sun,
-  Dribbble,
-  Mail,
-  Languages,
   X,
-  Download,
 } from 'lucide-angular';
+import { routes } from './app.routes';
 
 export const importedLucideIcons = {
   MoveRight,
@@ -42,7 +42,7 @@ const MODULES = [LayoutModule];
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes, withViewTransitions()),
+    provideRouter(routes, withViewTransitions(), withHashLocation()),
     importProvidersFrom(
       ...MODULES,
       LucideAngularModule.pick(importedLucideIcons),
