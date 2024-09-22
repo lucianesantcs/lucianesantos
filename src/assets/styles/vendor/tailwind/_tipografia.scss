@@ -1,0 +1,107 @@
+/*
+    size: 54
+    line-height: 72
+    font-weight: 500 / medium
+*/
+.display-large {
+  @apply text-6xl leading-6xl font-medium font-display;
+}
+
+/*
+    size: 36
+    line-height: 48
+    font-weight: 500 / medium
+*/
+.display-medium {
+  @apply text-4xl leading-4xl font-medium font-display;
+}
+
+/*
+    size: 32
+    line-height: 40
+    font-weight: 500 / medium
+*/
+.heading-large {
+  @apply text-3xl leading-10 font-medium font-heading;
+}
+
+/*
+    size: 24
+    line-height: 32
+    font-weight: 500 / medium
+*/
+.heading-medium {
+  @apply text-2xl font-medium font-heading;
+}
+
+/*
+    size: 20
+    line-height: 24
+    font-weight: 500 / medium
+*/
+.heading-small {
+  @apply text-xl leading-6 font-medium font-heading;
+}
+
+/*
+    size: 16
+    line-height: 24
+    font-weight: 600 / SemiBold
+*/
+.label-large {
+  @apply text-base font-semibold font-label;
+}
+
+/*
+    size: 14
+    line-height: 24
+    font-weight: 600 / SemiBold
+*/
+.label-medium {
+  @apply text-sm leading-6 font-semibold font-label;
+}
+
+/*
+    size: 12
+    line-height: 16
+    font-weight: 600 / SemiBold
+*/
+.label-small {
+  @apply text-xs font-semibold font-label;
+}
+
+/*
+    size: 10
+    line-height: 16
+    font-weight: 600 / SemiBold
+*/
+.label-smaller {
+  @apply text-xxs leading-4 font-semibold font-label;
+}
+
+/*
+    size: 16
+    line-height: 24
+    font-weight: 400 / Regular
+*/
+.paragraph-large {
+  @apply text-base font-normal font-paragraph;
+}
+
+/*
+    size: 14
+    line-height: 24
+    font-weight: 400 / Regular
+*/
+.paragraph-medium {
+  @apply text-sm leading-6 font-normal font-paragraph;
+}
+
+/*
+    size: 12
+    line-height: 16
+    font-weight: 400 / Regular
+*/
+.paragraph-small {
+  @apply text-xs font-normal font-paragraph;
+}

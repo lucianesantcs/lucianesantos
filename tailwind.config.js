@@ -4,6 +4,21 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontSize: {
+        'xxs': '0.625rem',
+        '3xl': '2rem',
+        '6xl': '3.375rem'
+      },
+      lineHeight: {
+        '6xl': '4.5rem',
+        '4xl': '3rem',
+      },
+      fontFamily: {
+        display: '"IBM Plex Sans"',
+        heading: '"IBM Plex Sans"',
+        label: '"IBM Plex Sans"',
+        paragraph: 'Inter'
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
