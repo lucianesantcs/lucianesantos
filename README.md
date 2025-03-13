@@ -22,12 +22,6 @@ Criado com componentes e suas variantes; tipografia baseada no Material Design; 
 
 <br />
 
-## :construction: Desenvolvimento (Em progresso):
-- [Visualização em desenvolvimento](https://lucianesantcs.github.io/site-pessoal)
-- Angular versão 17
-
-<br />
-
 ## :telephone_receiver: Contato
 
 - Email: lucianesantcs@gmail.com
